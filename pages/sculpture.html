@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+    font-family: h;
+    src: url(../fonts/Laila\ Regular.ttf);
+}
+
+@font-face {
+    font-family: p;
+    src: url(../fonts/Hind\ Guntur\ Regular.ttf);
+}
+body{
+    background-color: black;
+}
+.card{
+    display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+}
+        .product-card{
+    width: 250px;
+    border: 1px solid gray;
+    display: block;
+    margin: 20px auto;
+    box-shadow:0 0 10px black;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: gray;
+}
+.product-img{
+    height: 150px;
+    display: block;
+    margin:  auto;
+    text-align: center;
+    padding: 10px;
+    
+}.product-img:hover{
+    height: 155px;
+    width: 235px;
+}
+.product-img2{
+    width: 230px;
+    height: 150px;
+    margin: 10 auto;
+    margin-top: 10px;
+    display: block;
+}
+.product-img2:hover{
+    height: 155px;
+    width: 240px;
+}
+.product-title{
+    font-size: 30px;
+    text-align: center;
+    font-family: h;
+    margin: 5px;
+}
+.product-prize{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: p;
+    margin: 5px;
+}
+.btn{
+    display: block;
+    margin: 20px auto;
+    font-size: 20px;
+    padding: 10px 50px;
+    background-color: rgb(222, 89, 41);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+            background-color: #565656;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+.quantity-container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.btn-quantity{
+    width: 30px;
+    cursor: pointer;
+}
+.product-quantity{
+    font-size: 25px;
+}
+h1{
+    font-family: h;
+    text-align: center;
+    color: rgb(234, 88, 35);
+}
+
+    </style>
+</head>
+<body>
+    <h1>sculpture</h1>
+<div class="card">
+    <div class="product-card">
+        <img src="./../images/(1).jpg" class="product-img">
+        <h2 class="product-title">Turtle </h2>
+        <p class="product-description"></p>
+        <p class="product-prize">prize:₹300</p>
+        <div class="quantity-container">
+            <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="./../images/bird.jpeg" class="product-img2">
+        <h2 class="product-title"> Bird</h2>
+        <p class="product-description"></p>
+        <p class="product-prize">prize:₹450</p>
+        <div class="quantity-container">
+            <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="./../images/ganesha.jpg" class="product-img2">
+        <h2 class="product-title">Ganapati bappa</h2>
+        <p class="product-description"></p>
+        <p class="product-prize">prize:₹100</p>
+        <div class="quantity-container">
+            <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="./../images/angle.jpeg" class="product-img2">
+        <h2 class="product-title">angle</h2>
+        <p class="product-description"></p>
+        <p class="product-prize">prize:₹500</p>
+        <div class="quantity-container">
+            <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+</div>
+    <script>
+        const quantityElement=document.getElementById("quantity-text")
+        function increasequantity(){
+            let quantity=parseInt(quantityElement.innerText);
+            if(quantity<10){
+                quantityElement.innerText=++quantity;
+            }else{
+                alert("you can't add more than 10 items")
+            }
+        }
+        function decreasequantity(){
+            let quantity=parseInt(quantityElement.innerText);
+            if(quantity>1){
+                quantityElement.innerText=--quantity;
+            }else{
+                alert(" you can't add less than 1 items")
+        }
+        
+    }
+    </script>
+</body>
+</html>
