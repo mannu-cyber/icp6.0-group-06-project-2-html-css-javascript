@@ -11,8 +11,8 @@ body{
 }
 .main-contact-container{
     background-color: aliceblue;
-    width: 75%;
-    height: 80vh;
+    width: 70%;
+    height: 90vh;
     border-radius: 2px;
     margin: 0 auto;
     margin-top: 20px;
@@ -37,4 +37,17 @@ body{
 .contact-para{
     text-align: center;
     margin: 5px;
+}
+.second-container{
+    margin-left: 10px;
+}
+.contact-btn{
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-left: 120px;
+    width: 120px;
 }
