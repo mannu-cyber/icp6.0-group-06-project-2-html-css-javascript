@@ -18,3 +18,11 @@ body{
     margin: 0 auto;
     margin-top: 20px;
 }
+.main-image{
+    display: block;
+    height: 180px;
+    margin: 5px;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 80%;
+}
