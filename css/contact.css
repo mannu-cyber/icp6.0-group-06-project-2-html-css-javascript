@@ -3,5 +3,17 @@ body{
     margin: 0;
     background-color: #9be0ee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-title{
     text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.main-contact-container{
+    background-color: aliceblue;
+    width: 80%;
+    height: 80vh;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
