@@ -1,35 +1,230 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>About Page</title>
-    <link rel ="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+      @font-face {
+      font-family: h;
+       src: url(../fonts/Laila\ Regular.ttf);
+     }
+
+     @font-face {
+    font-family: p;
+    src: url(../fonts/Hind\ Guntur\ Regular.ttf);
+     }
+
+        body{
+            text-decoration: none;
+            background-color: black;
+        }
+        
+            .header-about {
+                width: 300px;
+                font-size: 50px ;
+                font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+                font-style: initial;
+                color:white;
+                align-items: center;
+            }
+
+           
+            .page-header {
+             margin: 5px ;
+            padding: 20px 5px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-right: 20%;
+        }
+
+        .header-img {
+            margin: 2px 49px;
+            height: 250px;
+            border-radius: 50px;
+            flex-basis: 20%;
+            animation: animate 3s linear infinite;
+            width:30%;
+            margin-left: 35%;
+            filter: drop-shadow(15px 7px 6px  rgb(248, 183, 62));
+
+        }
+        .paragraph{
+            font-size: 20px;
+            font-style: normal;
+            font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+           
+        }
+
+        .img{
+       width: 28%;
+      }
+
+     .img img{
+        max-width: 100%;
+      filter: drop-shadow(15px 7px 6px rgb(50, 98, 124));
+      border-radius: 60px;
+     }
+      
+    .content{
+  margin-top: 1vw;
+  width: 60%;
+}
+
+/*  cards start*/
+/*  cards start*/
+.heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.card-background{
+  height: 400px;
+  box-shadow: 2px 1px 3px 2px black;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+ }
+
+.card-container {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.893);
+  background-color: white;
+  border: 2px solid;
+  box-shadow: 4px 3px rgb(248, 183, 62);
+  width: 250px;
+  border-radius: 50px;
+  margin: 25px;
+  padding: 20px;
+  position: relative;
+  height: 350px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card-container:hover {
+  box-shadow: 8px 8px 8px rgb(248, 183, 62);
+  border-radius: 30px;
+}
+
+.card-profile {
+  border-radius:50px;
+  display: block;
+  height: 250px;
+  width: 250px;
+  margin-top:2px;
+  margin-left:2px;
+}
+.card-profile:hover {
+  box-shadow: 2px 1px 5px white;
+  margin-top: 3px;
+  margin-left: -7.8px;
+}
+
+.name {
+  color:black;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card-container p {
+  margin-top: 20px;
+}
+.card-name{
+  color:white;
+  font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)" ;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bolder;
+        }
+
+
+/*  cards end*/
+
+@keyframes animate{
+            0%{
+                transform: scale(1.1);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.1);
+            }
+        }
+
+
+    </style>
 </head>
 <body>
- <div class="section">
-    <div class="container">
-        <div class="content-section">
-            <div class="title">
-                <h1>About Us</h1>
+    <div class="page-header">
+        <img class="header-img" src="../about page/img/about/main img.jpg" >
+
+        <div class="header-about">
+          <p>  About Us ....</p>
+            
+            <div class="paragraph">
+              <p> Art is a diverse range of human activity, and its resulting product, 
+                that involves creative or imaginative talent generally expressive of technical proficiency, 
+                beauty, emotional power, or conceptual ideas.</p>
+                
             </div>
-            <div class="content">
-                <h3>1. Your Story:
-
-                    Start with your origin story: Share how you started, why you started, and what inspired you.
-                    Highlight key milestones: Showcase your journey and successes over time.
-                    Show your personality: Use storytelling techniques to make your story engaging and relatable.
-                    </h3>
-                    <div class="button">
-                        <a href=""></a>
-                    </div>
-                    </div>
-                    <div class ="social">
-                        
-                    </div>
-        </div>
+           </div>
     </div>
-</div>
+    <!--first img end-->
 
+   
+    
+      
+    
+    <!--card section start-->
 
-       
+    <div class="card-name">
+      <p>Meet Over Teem</p>
+    </div>
+    <div class="card-background">
+      <div class="card-container">
+        <img src="../about page/img/about/Akshada.jpeg" class="card-profile">
+        <p class="name">Akshada Anawade</p>
+        <p></p>
+      </div>
+
+      <div class="card-container">
+        <img src="../about page/img/about/Anjali.jpeg" class="card-profile">
+        <p class="name">Anjali Pise </p>
+        <p></p>
+      </div>
+  
+      <div class="card-container">
+        <img src="../about page/img/about/vikrant.png" class="card-profile">
+        <p class="name"> Vikrant </p>
+        <p></p>
+      </div>
+  
+      <div class="card-container">
+        <img src="../about page/img/about/Leena.jpeg" class="card-profile">
+        <p class="name">Leena </p>
+        <p></p>
+      </div>
+  
+    </div>
+    <!--card section end-->
+    
+  
+  
+
+          
+
+          
+    
+    
 </body>
-
 </html>
