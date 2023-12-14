@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel | Palette | Gallery</title>
+
+  <style>
+    @font-face {
+    font-family: h;
+    src: url(/fonts/Laila\ Regular.ttf);
+    }
+
+    @font-face {
+    font-family: p;
+    src: url(/fonts/Hind\ Guntur\ Regular.ttf);
+    }
+    
+    html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #9be0ee;
+   } 
+
+   .main{
+    width: 100%;
+    height: 100;
+    overflow-x: hidden;
+   
+   }
+
+   .card1{
+    background-color: white;
+    height: 300px;
+    width: 80%;
+    display: flex;
+    border-radius: 10px;
+    margin-left: 10%;
+
+    
+   }
+
+   .card1-img{
+    height: auto;
+    width: 400px;
+    margin-left: 20px ;
+    margin-top: 15px;
+    display: block;
+    box-shadow: 2px 2px 8px 0 rgba(0, 255, 255, 0.325);
+    border-radius: 30px;
+    position: absolute;
+   }
+
+   .card1-text{
+    height: 200px;
+    width: 700px;
+    color: #908ca8c2;
+    position: relative;
+    margin-left: 40%;
+    margin-right: 30px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: whitesmoke;
+   }
+    
+   .span-heading{
+    text-align: start;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.774);
+    margin-bottom: 10px;
+    margin-top: 10px;
+   }
+
+   .button-1{
+    background:  linear-gradient( #9be0ee, #25bbbbd0);
+    display: inline-flex;
+    padding: 12px 18px;
+    font-size: 16px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff0e6;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    border: 1px solid #5cc5da;
+
+   }
+
+   .card1-img:hover{
+    cursor: pointer;
+    height: 280px;
+    margin-top: 10px;
+    width: 420px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: 0.3s;
+    padding: 5px;
+
+   }
+
+  .button-1:hover{
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    
+    width: 250px;
+    height: auto;
+    transition: 0.3s;
+  }
+  </style>
+
+</head>
+
+<body>
+
+   <div class="main" >
+      <div class="card1">
+         <img src="../img/card img1.jpg" class="card1-img">
+          <div class="card1-text">
+            <p class="span-heading">Painting</p> 
+             <p>"Painting is a visual art form that involves applying pigments or color to a surface to create an image, design, or representation. It is one of the oldest and most fundamental forms of artistic expression, dating back to prehistoric times when early humans used natural materials like charcoal and pigments from plants to create cave paintings."</p>
+             <button type="button" class="button-1">Explore More</button>
+          </div>
+      </div>
+   </div>
+
+</body>
