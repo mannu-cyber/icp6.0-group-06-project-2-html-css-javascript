@@ -41,6 +41,11 @@
     
    }
 
+   .card1-img-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
    .card1-img{
     height: auto;
     width: 400px;
@@ -99,6 +104,14 @@
     background: linear-gradient(#25bbbbd0, #9be0ee);
     color: #ffffff;
   }
+
+  .slider-btn {
+      cursor: pointer;
+      padding: 10px;
+      background-color: #ddd;
+      border: none;
+      margin: 5px;
+    }
 
   @font-face {
     font-family: h;
@@ -391,6 +404,8 @@ header .header-right .hamburger div {
   }
   </style>
 
+
+
 </head>
 
 <body>
@@ -436,7 +451,10 @@ header .header-right .hamburger div {
 
 
       <div class="card1">
+        <div class="card1-img-container">
          <img src="../img/card img1.jpg" class="card1-img">
+         
+        </div>
           <div class="card1-text">
              <h2>Painting</h2> 
              <p>"Painting is a visual art form that involves applying pigments or color to a surface to create an image, design, or representation. It is one of the oldest and most fundamental forms of artistic expression, dating back to prehistoric times when early humans used natural materials like charcoal and pigments from plants to create cave paintings."</p>
@@ -445,22 +463,25 @@ header .header-right .hamburger div {
       </div>
          <br> <br>
       <div class="card1">
-        <img src="../img/card img1.jpg" class="card1-img">
+        <img src="../img/sculpture.jpg" class="card1-img">
          <div class="card1-text">
-            <h2>Painting</h2> 
-            <p>"Painting is a visual art form that involves applying pigments or color to a surface to create an image, design, or representation. It is one of the oldest and most fundamental forms of artistic expression, dating back to prehistoric times when early humans used natural materials like charcoal and pigments from plants to create cave paintings."</p>
+            <h2>Sculpture</h2> 
+            <p>"Sculpture involves creating three-dimensional forms and shapes by carving, modeling, or assembling materials such as wood, stone, metal, or clay.Sculptors work to give physical, tangible form to their artistic ideas, often creating freestanding sculptures or pieces that are integrated into architectural spaces."</p>
             <button type="button" class="button-1">Explore More</button>
          </div>
      </div>
        <br> <br>
      <div class="card1">
-      <img src="../img/card img1.jpg" class="card1-img">
+      <img src="../img/morden-art.jpg" class="card1-img">
        <div class="card1-text">
-          <h2>Painting</h2> 
-          <p>"Painting is a visual art form that involves applying pigments or color to a surface to create an image, design, or representation. It is one of the oldest and most fundamental forms of artistic expression, dating back to prehistoric times when early humans used natural materials like charcoal and pigments from plants to create cave paintings."</p>
+          <h2>Modren-Art</h2> 
+          <p>"Modern art refers to the broad spectrum of artistic styles, movements, and practices that emerged during the late 19th and early to mid-20th centuries. This period marked a significant departure from the traditional art forms that had prevailed for centuries. Modern art reflects a radical shift in artistic thinking, embracing innovation, experimentation, and a break from established norms."</p>
           <button type="button" class="button-1">Explore More</button>
        </div>
    </div>
+
+   
+ 
    </div>
 
 </body>
