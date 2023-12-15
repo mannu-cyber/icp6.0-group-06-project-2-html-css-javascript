@@ -47,9 +47,10 @@
     margin-left: 20px ;
     margin-top: 15px;
     display: block;
-    box-shadow: 2px 2px 8px 0 rgba(0, 255, 255, 0.325);
+    box-shadow: 2px 2px 8px 0 rgba(128, 128, 128, 0.2);
     border-radius: 30px;
     position: absolute;
+    transition: transform 0.3s ease-in-out;
    }
 
    .card1-text{
@@ -73,8 +74,8 @@
    .button-1{
     background:  linear-gradient( #9be0ee, #25bbbbd0);
     display: inline-flex;
-    padding: 12px 18px;
-    font-size: 16px;
+    padding: 14px 24px; 
+    font-size: 18px; 
     border: none;
     text-transform: uppercase;
     color: #fff0e6;
@@ -82,31 +83,21 @@
     letter-spacing: 1px;
     border-radius: 50px;
     border: 1px solid #5cc5da;
+    transition:  0.3s ease-in-out, color 0.3s ease-in-out;
 
    }
 
    .card1-img:hover{
     cursor: pointer;
-    height: 280px;
-    margin-top: 10px;
-    width: 420px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    transition: 0.3s;
-    padding: 5px;
+    transform: scale(1.1);
+    box-shadow: 4px 4px 12px 0 rgba(128, 128, 128, 0.4);
 
    }
 
   .button-1:hover{
     cursor: pointer;
-    padding: 10px 15px;
-    margin-right: 10px;
-    font-size: 18px;
-    
-    width: 250px;
-    height: auto;
-    transition: 0.3s;
+    background: linear-gradient(#25bbbbd0, #9be0ee);
+    color: #ffffff;
   }
 
   @font-face {
