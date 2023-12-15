@@ -67,13 +67,7 @@
     background-color: whitesmoke;
    }
     
-   .span-heading{
-    text-align: start;
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.774);
-    margin-bottom: 10px;
-    margin-top: 10px;
-   }
+  
 
    .button-1{
     background:  linear-gradient( #9be0ee, #25bbbbd0);
@@ -113,6 +107,111 @@
     height: auto;
     transition: 0.3s;
   }
+
+  @media screen and (min-width: 400px) and (max-width: 768px){
+    .main{
+      margin-right: 5px;
+    }
+    .card1{
+      height: 450px;
+      width: 85%;
+      border-radius: 0%;
+      position: relative;
+      border-radius: 10px;
+      
+    }
+
+    .card1-img{
+      height: 200px;
+      width: 350px;
+      display: inline-block;
+      border-radius: 0%;
+      box-shadow: none;
+      margin-left:30px;
+      margin-right: 40px;
+    }
+
+    .card1-text{
+     
+      font-size: 15px;
+     height: 0;
+      width: 350px;
+      margin-top: 80px;
+      margin-left: 40px;
+      position: absolute;
+      right: 1px;
+      bottom: 80px;
+      top: 120px;
+     background-color: none;
+      border-radius: 0%;
+      justify-content: space-between;
+      padding: 0%;
+      
+
+    }
+    .button-1{
+      font-size: 10px;
+    }
+
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 950px){
+    .card1{
+      height: 400px;
+      width: 80%;
+      position: relative;
+      
+      
+    }
+
+    .card1-img{
+      height: 200px;
+      width: 500px;
+      margin-left: 80px;
+      border-radius: 0%;
+      box-shadow: none;
+    }
+    
+    .card1-text{
+      font-size: 15px;
+      color: none;
+      background-color: none;
+      height: 0;
+      width: 600px;
+      margin-left: 20px;
+      position: absolute;
+      right: 5px;
+      bottom: 190px;
+      border-radius: 0%;
+      justify-content: space-between;
+      padding: 0%;
+
+    }
+
+    .button-1{
+      font-size: 13px;
+    }
+
+
+  }
+
+  @media screen and (min-width: 951px) and (max-width: 1200px){
+    .card1-text{
+      font-size: 18px;
+      height: 0;
+      width: 490px;
+      margin-left: 60px;
+      position: absolute;
+      justify-content: space-between;
+      padding: 0%;
+      right: 80px;
+      
+    }
+    
+    .button-1{
+      font-size: 13px;
+    }
+  }
   </style>
 
 </head>
@@ -123,11 +222,29 @@
       <div class="card1">
          <img src="../img/card img1.jpg" class="card1-img">
           <div class="card1-text">
-            <p class="span-heading">Painting</p> 
+             <h2>Painting</h2> 
              <p>"Painting is a visual art form that involves applying pigments or color to a surface to create an image, design, or representation. It is one of the oldest and most fundamental forms of artistic expression, dating back to prehistoric times when early humans used natural materials like charcoal and pigments from plants to create cave paintings."</p>
              <button type="button" class="button-1">Explore More</button>
           </div>
       </div>
+         <br> <br>
+      <div class="card1">
+        <img src="../img/card img1.jpg" class="card1-img">
+         <div class="card1-text">
+            <h2>Painting</h2> 
+            <p>"Painting is a visual art form that involves applying pigments or color to a surface to create an image, design, or representation. It is one of the oldest and most fundamental forms of artistic expression, dating back to prehistoric times when early humans used natural materials like charcoal and pigments from plants to create cave paintings."</p>
+            <button type="button" class="button-1">Explore More</button>
+         </div>
+     </div>
+       <br> <br>
+     <div class="card1">
+      <img src="../img/card img1.jpg" class="card1-img">
+       <div class="card1-text">
+          <h2>Painting</h2> 
+          <p>"Painting is a visual art form that involves applying pigments or color to a surface to create an image, design, or representation. It is one of the oldest and most fundamental forms of artistic expression, dating back to prehistoric times when early humans used natural materials like charcoal and pigments from plants to create cave paintings."</p>
+          <button type="button" class="button-1">Explore More</button>
+       </div>
+   </div>
    </div>
 
 </body>
