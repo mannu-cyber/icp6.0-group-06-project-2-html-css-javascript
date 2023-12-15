@@ -36,6 +36,7 @@
     display: flex;
     border-radius: 10px;
     margin-left: 10%;
+    margin-top: 100px;
 
     
    }
@@ -108,6 +109,190 @@
     transition: 0.3s;
   }
 
+  @font-face {
+    font-family: h;
+    src: url(../fonts/Laila\ Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+ 
+}
+img {
+    width: 100%;
+}
+
+
+ header {
+    position: fixed;
+    z-index:120;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #000000;
+
+}
+header .header-left {
+    display: flex;
+    align-items: center;
+
+}
+header .header-left .logo {
+    width: 140px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 18px;
+    padding: 1px 10px;
+    transition: 0.2s;
+}
+
+nav ul{
+    margin-left: 18vw;
+}
+
+
+nav a {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1px 4px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+    font-family: h;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0px;
+    background-color: #FA4738;
+    transition: .5s ease;
+}
+
+
+
+nav a:hover {
+    color: #f70000;
+
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+
+nav ul li a:hover {
+    color:  #f70000;
+}
+nav .login-signup {
+    display: none;
+}
+
+header .header-right{
+    display:none;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+header .login-signup a {
+    display: inline-block;
+    color: #0b2239;
+    background: #ffffff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.login-signup a:hover{
+    background-color: #f70000;
+    scale: 1.1;
+}
+
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -300%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #000000;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+
+    nav ul{
+        margin-left:0 ;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+    nav ul{
+        margin-left:0 ;
+    }
+}
+
   @media screen and (min-width: 400px) and (max-width: 768px){
     .main{
       margin-right: 5px;
@@ -141,7 +326,7 @@
       position: absolute;
       right: 1px;
       bottom: 80px;
-      top: 120px;
+      top: 140px;
      background-color: none;
       border-radius: 0%;
       justify-content: space-between;
@@ -181,10 +366,11 @@
       margin-left: 20px;
       position: absolute;
       right: 5px;
-      bottom: 190px;
+      bottom: 180px;
       border-radius: 0%;
       justify-content: space-between;
       padding: 0%;
+     
 
     }
 
@@ -219,6 +405,45 @@
 <body>
 
    <div class="main" >
+
+    <header>
+      <div class="header-left">
+          <div class="logo">
+              <img src="../logo/dark theme.png" width="40px" alt="">
+              
+          </div>
+          <nav>
+              <ul>
+                  <li>
+                      <a href="" class="active">Home</a>
+                  </li>
+                  <li>
+                      <a href="">Gallery</a>
+                  </li>
+                  <li>
+                      <a href="">Contact</a>
+                  </li>
+                  <li>
+                      <a href="">About</a>
+                  </li>
+                
+              </ul>
+              
+          </nav>
+      </div>
+      <div class="header-right">
+          <div class="login-signup">
+              <a href=""><i class="ri-user-fill"></i></a> 
+          </div>
+          <div class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+      </div>
+  </header>
+
+
       <div class="card1">
          <img src="../img/card img1.jpg" class="card1-img">
           <div class="card1-text">
