@@ -1,20 +1,64 @@
+@font-face {
+    font-family: h;
+    src: url(../fonts/Laila\ Regular.ttf);
+}
+
+@font-face {
+    font-family: p;
+    src: url(../fonts/Hind\ Guntur\ Regular.ttf);
+}
+
 body{
     padding: 0;
     margin: 0;
-    background-color: #9be0ee;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fff;
 }
 .main-title{
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
+    font-family: h;
 }
 .main-contact-container{
     background-color: aliceblue;
-    width: 80%;
-    height: 80vh;
+    width: 70%;
+    height: 90vh;
     border-radius: 2px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 4vw;
+}
+.main-image{
+    display: block;
+    height: 180px;
+    margin: 5px;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 80%;
+}
+.contact-text{
+    text-align: start;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+.contact-para{
+    text-align: center;
+    margin: 5px;
+    font-family: p;
+}
+.second-container{
+    margin-left: 10px;
+}
+.contact-btn{
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-left: 120px;
+    width: 120px;
 }
