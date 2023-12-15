@@ -489,8 +489,7 @@ header .header-right .hamburger div {
     }
   }
   </style>
-
-
+ 
 
 </head>
 
@@ -544,7 +543,7 @@ header .header-right .hamburger div {
           <div class="card1-text">
              <h2>Painting</h2> 
              <p>"Painting is a visual art form that involves applying pigments or color to a surface to create an image, design, or representation. It is one of the oldest and most fundamental forms of artistic expression, dating back to prehistoric times when early humans used natural materials like charcoal and pigments from plants to create cave paintings."</p>
-             <button type="button" class="button-1">Explore More</button>
+             <button type="button" class="button-1" onclick="exploreMore()">Explore More</button>
           </div>
       </div>
          <br> <br>
@@ -553,7 +552,7 @@ header .header-right .hamburger div {
          <div class="card1-text">
             <h2>Sculpture</h2> 
             <p>"Sculpture involves creating three-dimensional forms and shapes by carving, modeling, or assembling materials such as wood, stone, metal, or clay.Sculptors work to give physical, tangible form to their artistic ideas, often creating freestanding sculptures or pieces that are integrated into architectural spaces."</p>
-            <button type="button" class="button-1">Explore More</button>
+            <button type="button" class="button-1" onclick="exploreMore()">Explore More</button>
          </div>
      </div>
        <br> <br>
@@ -562,7 +561,7 @@ header .header-right .hamburger div {
        <div class="card1-text">
           <h2>Modren-Art</h2> 
           <p>"Modern art refers to the broad spectrum of artistic styles, movements, and practices that emerged during the late 19th and early to mid-20th centuries. This period marked a significant departure from the traditional art forms that had prevailed for centuries. Modern art reflects a radical shift in artistic thinking, embracing innovation, experimentation, and a break from established norms."</p>
-          <button type="button" class="button-1">Explore More</button>
+          <button type="button" class="button-1" onclick="exploreMore()">Explore More</button>
        </div>
    </div>
 <br> <br>
@@ -621,8 +620,12 @@ header .header-right .hamburger div {
   
   </div>
   
-  </div>
- 
-   </div>
+  <script>
+    
+    function exploreMore() {
+        alert("You clicked the Explore More button!");
+    }
+</script>
+
 
 </body>
