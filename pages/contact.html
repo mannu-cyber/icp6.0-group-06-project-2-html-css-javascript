@@ -4,13 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="../css/contact.css" />gi
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="shortcut icon" href="../logo/ppg-favicon-color.png" type="image/x-icon">
+
   </head>
   <body>
-    <div class="main-contact-container">
-        <img src=/>
-      <h1 class="main-title">Contact Us</h1>
-      <p>For Paintings, Arts Please Contact us.</p>
+
+<div class="main">
+
+
+  <header>
+    <div class="header-left">
+        <div class="logo">
+            <img src="../logo/dark theme.png" width="40px" alt="">
+            
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="../pages/gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="../pages/contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="../pages/about.html">About</a>
+                </li>
+              
+            </ul>
+            
+        </nav>
     </div>
+    <div class="header-right">
+        <div class="login-signup">
+            <a href=""><i class="ri-user-fill"></i></a> 
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+</header>
+
+
+
+
+
+
+    <div class="main-contact-container">
+      <img
+        src="./../images/photo-1564399580075-5dfe19c205f3.avif"
+        class="main-image"
+      />
+      <h1 class="main-title">Contact Us 📞</h1>
+      <p class="contact-para">LETS CONNECT:WE'RE HERE TO HELP,AND WE'D LOVE TO HEAR FOR YOU! </br> WHETHER YOU HAVE A QUESTION COMMENT OR JUST WANT TO CHAT,YOU CAN REACH OUT TO US </br>THROUGH THE CONTACT FORM OF THIS PAGE,OR BY EMAIL,PHONE OR SOCIAL MEDIA.</p>
+      <div class="second-container">
+        <form>
+          <label for="fname">Name:</label>
+         <input type="text" placeholder="Enter your Name" required class="contact-text" id="fname"/></br>
+         <label for="fname">Email:</label>
+         <input type="email" placeholder="Enter your email" required class="contact-text" id="fname"/></br>
+         <label for="fname">Call:</label>
+         <input type="tel" placeholder="Enter your call no" required class="contact-text" id="fname"/></br>
+         <button type="button" class="contact-btn" onclick="addedContact()">Submit</button>
+
+        </form>
+      </div>
+    </div>
+
+    </div>
+
+    <script>
+      function addedContact(){
+        if(addedContact){
+          alert("contact added successfully")
+        }
+      }
+    </script>
+
+    <script src="../js/navbar.js"></script>
   </body>
 </html>
