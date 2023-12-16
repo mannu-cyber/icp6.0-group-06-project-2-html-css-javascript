@@ -7,7 +7,7 @@
     <title>Pixel | Palette | Gallery</title>
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="shortcut icon" href="./logo/ppg-favicon-color.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -64,24 +64,23 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            <img src="https://cdn.pixabay.com/photo/2023/10/05/16/13/mountains-8296344_1280.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            <img src="https://cdn.pixabay.com/photo/2017/02/14/03/03/ama-dablam-2064522_640.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            <img src="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_1280.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            <img src="https://cdn.pixabay.com/photo/2017/05/09/03/46/alberta-2297204_640.jpg" />
           </div>
         </div>
-    
       </div>
 
   </div>
     
-</div>
+
 <!-- End of Page1 -->
 
 
@@ -153,17 +152,29 @@
 </div>
 
 </div>
+</div>
 
 
 
-    </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="./js/navbar.js"></script>
     <script src="./js/index.js"></script>
-   
 
-  <script src="./js/navbar.js"></script>
+    <script>
+        let swiper = new Swiper(" .mySwiper", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: "true",
+    grabCursor: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: "true",
+    },
+  });
+    </script>
 </body>
 
 </html>
