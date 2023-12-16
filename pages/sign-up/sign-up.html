@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="/pages/sign-up/sign-upstyle.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h4 class="heading">Sign-up</h4>
+        <form aciton="/myaction.php" name="myForm" onsubmit=" validateForm()" method="post">
+            <div class="formdesign" id="name">
+                 <input type="text" name="fname" placeholder="Enter Your Name" required class="input-box"><b><span class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="email">
+             <input type="email" name="femail" required class="input-box"  placeholder="Enter Your Email" ><b><span class="formerror"> </span></b>
+            </div>
+
+            <div class="formdesign" id="pass">
+            <input type="password" name="fpass" required class="input-box"  placeholder="Enter Your Password" ><b><span class="formerror"></span></b>
+            </div>
+
+            <div class="formdesign" id="cpass">
+            <input type="password" name="fcpass" required class="input-box"  placeholder="Enter Your Confirm Password" ><b><span class="formerror"></span></b>
+            </div>
+
+            <input class="but" type="submit" value="Submit" onclick="click()">
+
+        </form>
+    </div>
+</body>
+<script src="/pages/sign-up/sign-up.js"></script>
+
+
+</html>
