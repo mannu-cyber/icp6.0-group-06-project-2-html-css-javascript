@@ -21,8 +21,8 @@ body{
 }
 .main-contact-container{
     background-color: rgb(209, 227, 242);
-    width: 70%;
-    height: 90vh;
+    width: 78%;
+    height: 100%;
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 4vw;
@@ -31,14 +31,24 @@ body{
     display: block;
     height: 180px;
     margin: 5px;
+    width: 300px;
     margin-left:auto;
     margin-right: auto;
     border-radius: 80%;
 }
 .contact-text{
     text-align: start;
-    width: 300px;
-    height: 30px;
+    width: 350px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 18px;
+    padding: 5px;
+    font-size: 20px;
+}
+.contact-suggest{
+    text-align: start;
+    width: 350px;
+    height: 55px;
     border-radius: 5px;
     margin: 10px;
     padding: 5px;
@@ -50,7 +60,7 @@ body{
     font-family: p;
 }
 .second-container{
-    margin-left: 10px;
+    margin-left: 40px;
 }
 .contact-btn{
     margin: 5px;
@@ -61,4 +71,33 @@ body{
     border-radius: 10px;
     margin-left: 120px;
     width: 120px;
+    margin-top: 15px;
+}
+.information-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: h;
+}
+.small-symbol{
+    margin: 15px;
+    display: inline;
+    height: 45px;
+    width: 50px;
+}
+.small-symbol:hover{
+    cursor: pointer;
+    transform: 0.3s;
+    transform: translateY(-8px);
+}
+.heading{
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+}
+.third-container{
+    margin-left: 80px;
+}
+.form-margin{
+    margin-top: 20px;
 }
