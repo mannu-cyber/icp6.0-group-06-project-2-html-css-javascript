@@ -29,11 +29,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     background-color: #000000;
-=======
-    background-color: #c6f1f9;
->>>>>>> 9ff518858d369ecd89f144fcb5998005de7b87c4
 }
 
 .main {
@@ -51,76 +47,6 @@ a {
     font-weight: 700;
 }
 
-/* start of navbar effect */
-
-.nav {
-    width: 100%;
-    height: 100px;
-    background-color: #000000;
-z-index: 30;
-    position: fixed;
-    top: 0;
-   left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 3vw;
-}
-
-
-
-
-
-
-.nav a {
-    font-size: 17px;
-    background: transparent;
-    border: none;
-    padding: 5px 4px;
-    color: #ffffff;
-    text-transform: uppercase;
-    position: relative;
-    transition: .5s ease;
-}
-
-.nav a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0px;
-    background-color: #FA4738;
-    transition: .5s ease;
-}
-
-
-
-.nav a:hover {
-    color: #f70000;
-
-}
-
-.nav a:hover::before {
-    width: 100%;
-}
-
-
-
-
-.middle-nav {
-    display: flex;
-    gap: 30px;
-}
-
-
-
-
-.nav .right {
-display: none;
-}
-
-/*End of navbar effect */
 
 
 
@@ -132,68 +58,26 @@ display: none;
     background-color: #9be0ee;
     width: 100%;
     height: 100vh;
-    padding-top: 6vw;
+    padding-top: 2vw;
 }
-
-.page1 video{
-    position: relative;
-    object-fit: cover;
-    object-position: center;
+ .swiper {
     width: 100%;
     height: 100%;
-}
+  }
 
+   .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
 
-.page1 .top-content{
-    width: 100%;
-    height: 88%;
-    position: absolute;
-    top: 6vw;
-    /* background-color: rgb(255, 0, 0); */
-    z-index: 12;
-    padding: 10vw 15vw;
-    font-family: h;
-    text-transform: capitalize;
-    font-size: 2vw;
-    font-weight: 800;   
-    color: #ffffff;  
-    line-height: 1.4; 
-
-}
-
-
-.talk{
-    position: relative;
-    left: 10vw;
-}
-
-.top-content h1:nth-child(2){
-    margin-bottom: 15px;
-}
-
-.btn-grp{
-    position: relative;
-    left: 18vw;
-    top: 23vw;
-}
-
-.page1 .top-content button{
-    background-color: var(--btn-bg);
-    padding: var(--btn-padding);
-    font-size: 1.3vw;
-    border: none;
-transition: .5s;
-
-}
-
-.page1 .top-content button:hover{
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: wheat;
-    scale: 1.02;
-}
-
+ .swiper-slide img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+/* filter: contrast(); */
+  }
 
 
 
@@ -215,7 +99,7 @@ transition: .5s;
 
 .footer{
     width: 100vw;
-    height: 88vh;
+    height: 70vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
@@ -253,11 +137,16 @@ border: none;
 
 .handle{
     margin: 1.4vw 0;
+
 }
 
 .footer .handle i{
     font-size: 30px;
+    transition: .5s;
+}
 
+.footer .handle i:hover{
+    color: #FA4738;
 }
 
 .sections{
@@ -292,6 +181,12 @@ border: none;
     margin: 1px;
     cursor: pointer;
     font-family: p;
+    font-weight: 900;
+    transition: .4s;
+}
+
+.footer .stock-images button:hover{
+    color: #FA4738;
 }
 
 
