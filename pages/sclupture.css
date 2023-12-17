@@ -26,16 +26,20 @@ body{
     display: flex;
     justify-content: center;
 }
-.paintings .card{
-    max-width: 350px;
+/* .paintings .card{
+    width: 350px;
+
     height: 400px;
     border-radius: 6px;
-    margin-inline: 2vw 20px ;
+   
     background-color: rgba(255, 255, 255, 0.603);
     box-shadow: 0px 4px 4px 6px gray;
     cursor:pointer;
-    position: relative;
+    
 }
+position: relative; */
+
+
 .paintings .card .a{
     color:#000;
     text-align: center;
@@ -77,10 +81,10 @@ body{
     justify-content: center;
 }
 .painting .cards{
-    max-width: 350px;
+    width: 350px;
     height: 400px;
     border-radius: 6px;
-    margin-inline: 2vw 20px ;
+
     background-color: rgba(255, 255, 255, 0.603);
     box-shadow: 0px 4px 4px 6px gray;
     cursor:pointer;
