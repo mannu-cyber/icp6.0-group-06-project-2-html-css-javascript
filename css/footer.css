@@ -1,0 +1,128 @@
+@font-face {
+    font-family: h;
+    src: url(../fonts/Laila\ Regular.ttf);
+}
+
+@font-face {
+    font-family: p;
+    src: url(../fonts/Hind\ Guntur\ Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --btn-bg: #FA4738;
+    --clr: #000;
+    --btn-padding: .6vw 2.5vw;
+    --para-size: font-size: 1.4vw;
+
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000da;
+    font-family: h;
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+
+.footer{
+    width: 100vw;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding-top: 5vw;
+}
+
+.social-media h3{
+    line-height: 1.2;
+}
+
+.social-media p{
+    font-size: 1.4vw;
+    margin: 1vw 0;
+}
+
+/* .social-media img{
+    width: 30px;
+    border: none;
+    margin: 0 20px;
+} */
+
+.footer .download{
+    display: flex;
+/* background-color: red; */
+width: 10vw;
+justify-content: center;
+gap: 2vw;
+border: none;
+}
+
+.download button{
+    border: none;
+}
+
+.handle{
+    margin: 1.4vw 0;
+
+}
+
+.footer .handle i{
+    font-size: 30px;
+    transition: .5s;
+}
+
+.footer .handle i:hover{
+    color: #FA4738;
+}
+
+.sections{
+    width: 20vw;
+}
+
+.footer h3{
+    font-size: 2vw;
+    font-weight: 500;
+    font-family: p;
+}
+
+.quick-links{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+
+}
+
+.quick-links a:hover{
+    color: #f70000;
+
+}
+
+.footer .stock-images{
+    width: 30vw;
+    /* background-color: red; */
+}
+
+.footer .stock-images button{
+    padding: var(--btn-padding);
+    margin: 1px;
+    cursor: pointer;
+    font-family: p;
+    font-weight: 900;
+    transition: .4s;
+}
+
+.footer .stock-images button:hover{
+    color: #FA4738;
+}
+
+
