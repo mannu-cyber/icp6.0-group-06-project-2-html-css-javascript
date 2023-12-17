@@ -208,10 +208,11 @@ body{
     box-shadow:0 0 10px black;
     border-radius: 10px;
     padding: 0 20px;
-    background-color: gray;
+    background-color: white;
 }
 .product-img{
-    height: 150px;
+    width: 100%;
+    height: 160px;
     display: block;
     margin:  auto;
     text-align: center;
@@ -219,10 +220,10 @@ body{
     
 }.product-img:hover{
     height: 155px;
-    width: 235px;
+    width: 101%;
 }
 .product-img2{
-    width: 210px;
+    width: 100%;
     height: 150px;
     margin: 10 auto;
     margin-top: 10px;
@@ -230,7 +231,7 @@ body{
 }
 .product-img2:hover{
     height: 155px;
-    width: 215px;
+    width: 101%;
 }
 .product-title{
     font-size: 30px;
@@ -337,18 +338,6 @@ h1{
         <p class="product-description"> This is a captivating sculpture that beautifully captures the delicate moment of bird. when a bird alights on a blooming flower. </p>
         <p class="product-prize">Prize:₹850</p>
         <div class="quantity-container">
-            <img src="./../images/minus (3).png" class="btn-quantity" onclick="decreasequantity()"/>
-            <span class="product-quantity" id="quantity-text">1</span>
-            <img src="./../images/add (1).png" class="btn-quantity" onclick="increasequantity()"/>
-        </div>
-        <button type="button" class="btn">Buy Now</button>
-    </div>
-    <div class="product-card">
-        <img src="./../images/ganesha.jpg" class="product-img2">
-        <h2 class="product-title">Ganapati</h2>
-        <p class="product-description">A Ganesha sculpture typically represents Lord Ganesha, a widely revered deity in Hinduism, known as the remover of obstacles and the god of wisdom. </p>
-        <p class="product-prize">Prize:₹150</p>
-        <div class="quantity-container">
             <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
             <span class="product-quantity" id="quantity-text">1</span>
             <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
@@ -356,10 +345,10 @@ h1{
         <button type="button" class="btn">Buy Now</button>
     </div>
     <div class="product-card">
-        <img src="./../images/angle.jpeg" class="product-img2">
-        <h2 class="product-title">Angle</h2>
-        <p class="product-description"></p>
-        <p class="product-prize">Prize:₹800</p>
+        <img src="./../images/Table Lamp.jpg" class="product-img2">
+        <h2 class="product-title"> Table Lamp</h2>
+        <p class="product-description">This is not a source of light but a conversation piece that enhances any room's ambiance.It has ability to transform atmosphere with its glow. </p>
+        <p class="product-prize">Prize:₹1100</p>
         <div class="quantity-container">
             <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
             <span class="product-quantity" id="quantity-text">1</span>
@@ -367,6 +356,7 @@ h1{
         </div>
         <button type="button" class="btn">Buy Now</button>
     </div>
+    
 </div>
 <div class="card">
     <div class="product-card">
@@ -393,21 +383,10 @@ h1{
         </div>
         <button type="button" class="btn">Buy Now</button>
     </div>
+   
     <div class="product-card">
-        <img src="./../images/Matki Table Lamp.jpg" class="product-img2">
-        <h2 class="product-title"> Mataki Table Lamp</h2>
-        <p class="product-description">This is not just a source of light but a conversation piece that enhances any room's ambiance.It has ability to transform the atmosphere with its radiant glow. </p>
-        <p class="product-prize">Prize:₹1100</p>
-        <div class="quantity-container">
-            <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
-            <span class="product-quantity" id="quantity-text">1</span>
-            <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
-        </div>
-        <button type="button" class="btn">Buy Now</button>
-    </div>
-    <div class="product-card">
-        <img src="./../images/Golden Flora Brass.jpg" class="product-img2">
-        <h2 class="product-title">Goldan Flora Brass</h2>
+        <img src="./../images/Golden Tree.jpg" class="product-img2">
+        <h2 class="product-title">Goldan Tree</h2>
         <p class="product-description"> This is a captivating brass sculpture that seamlessly combines artistry with the warm, lustrous tones of brass.</p>
         <p class="product-prize">Prize:₹1300</p>
         <div class="quantity-container">
@@ -419,63 +398,44 @@ h1{
     </div>
     
 </div>
-<div class="footer">
-
-    <div class="social-media sections">
-    <h3>Free photos shared by talented creators.</h3>
-    <p>Download our App</p>
-    <div class="download">
-        <button type="button"> <img src="../logo/appstore.png" alt=""></button>
-        <button type="button"><img src="../logo/playstore.png" alt=""></button>
+<div class="card">
+    <div class="product-card">
+        <img src="./../images/ganesha.jpg" class="product-img2">
+        <h2 class="product-title">Ganapati</h2>
+        <p class="product-description">A Ganesha sculpture typically represents Lord Ganesha, a widely revered deity in Hinduism, known as the remover of obstacles and the god of wisdom. </p>
+        <p class="product-prize">Prize:₹150</p>
+        <div class="quantity-container">
+            <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
     </div>
-    
-    <div class="handle">
-     
-    <a href="www.facebook.com">   <i class="ri-facebook-line"></i></a>
-    <a href="www.instagram.com">    <i class="ri-instagram-line"></i>
-    </a>
-      <a href="www.youtube.com">  <i class="ri-youtube-line"></i></a>
-       <a href="www.twitter.com"> <i class="ri-twitter-line"></i></a>
-       <a href="www.pinterest.com"> <i class="ri-pinterest-line"></i></a>
-    
+    <div class="product-card">
+        <img src="./../images/angle.jpeg" class="product-img2">
+        <h2 class="product-title">Angle</h2>
+        <p class="product-description">A little angel sculpture typically embodies a sense of innocence, purity, and celestial beauty. </p>
+        <p class="product-prize">Prize:₹800</p>
+        <div class="quantity-container">
+            <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
     </div>
-    
+    <div class="product-card">
+        <img src="./../images/krishna.jpg" class="product-img2">
+        <h2 class="product-title"> krishna</h2>
+        <p class="product-description">The sculptures may capture the playful and mischievous aspect of Krishna, especially in depictions related to his childhood. </p>
+        <p class="product-prize">Prize:₹1100</p>
+        <div class="quantity-container">
+            <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
     </div>
-    
-    
-    <div class="quick-links sections">
-    <h3>Quick links</h3>
-    
-    <a href="../index.html">Home</a>
-    <a href="../pages/gallery.html">Gallery</a>
-    <a href="../pages/contact.html">Contact</a>
-    <a href="../pages/about.html">About</a>
-    
-    </div>
-    
-    
-    <div class="stock-images sections">
-        <h3>Stock Images</h3>
-    <button type="button">Black and white photography</button>
-    
-        <button type="button">Happy birthday images</button>
-        <button type="button">Love wallpaper</button>
-        <button type="button">Samsung wallpaper</button>
-        <button type="button">4K wallpaper</button>
-        <button type="button">iPhone wallpaper</button>
-        <button type="button">Lock screen wallpaper</button>
-        <button type="button">Cool wallpapers</button>
-        <button type="button">Best HD wallpapers</button>
-        <button type="button">Happy new year images</button>
-        <button type="button">Free business videos</button>
-        <button type="button">Galaxy wallpaper</button>
-    
-    
-    </div>
-    
-    </div>
-   
-     </div>
+</div>
     <script>
         const quantityElement=document.getElementById("quantity-text")
         function increasequantity(){
