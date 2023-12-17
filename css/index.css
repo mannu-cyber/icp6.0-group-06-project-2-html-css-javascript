@@ -68,6 +68,7 @@ a {
    .swiper-slide {
     background-position: center;
     background-size: cover;
+    position: relative;
   }
 
  .swiper-slide img {
@@ -78,6 +79,20 @@ a {
     object-position: center;
 /* filter: contrast(); */
   }
+
+.swiper-slide button{
+    position: absolute;
+    bottom: 250px;
+    left: 30%;
+    padding: var(--btn-padding);
+    background-color: var(--btn-bg);
+    border: none;
+    font-size: 1.3vw;
+    font-family: h;
+    font-weight: 800;
+    cursor: pointer;
+
+}
 
 
 

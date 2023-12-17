@@ -35,6 +35,17 @@ header .header-left {
     align-items: center;
 
 }
+
+.logo-name{
+    font-size: 1.3vw;
+    color: #cfd9e0;
+    text-transform: uppercase;
+    font-family: h;
+    position: relative;
+    right: 45px;
+    top: 12px;
+}
+
 header .header-left .logo {
     width: 140px;
 }
