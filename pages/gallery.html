@@ -66,6 +66,18 @@
                         <img id="hert" onclick="clrChang()" class="hert" src="../logo/heart.png" alt="">
                         <img id="save" onclick="saved()" src="../logo/bookmark-white.png" alt="">
                     </div>
+                    <div class="img-container">
+                        <img src="https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg" alt="Image 2"
+                            onclick="openImg('https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg')">
+                        <img id="hert" onclick="clrChang()" class="hert" src="../logo/heart.png" alt="">
+                        <img id="save" onclick="saved()" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    <div class="img-container">
+                        <img src="https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg" alt="Image 2"
+                            onclick="openImg('https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg')">
+                        <img id="hert" onclick="clrChang()" class="hert" src="../logo/heart.png" alt="">
+                        <img id="save" onclick="saved()" src="../logo/bookmark-white.png" alt="">
+                    </div>
 
 
                     
@@ -79,55 +91,7 @@
                     <img id="modalImage" src="" alt="Modal Image">
                 </div>
 
-                <script>
-                    function openImg(imageSrc) {
-                        const modal = document.getElementById('myModal');
-                        const modalImage = document.getElementById('modalImage');
-
-                        modal.style.display = 'flex';
-                        modalImage.src = imageSrc;
-                    }
-
-                    function closeModal() {
-                        const modal = document.getElementById('myModal');
-                        modal.style.display = 'none';
-                    }
-
-                    const hertElement = document.getElementById('hert');
-                    let dil = false;
-                    function clrChang() {
-
-                        if (dil == false) {
-                            hertElement.src = '../logo/red-hert.png'
-                            dil = true
-                        }
-
-                        else {
-                            hertElement.src = '../logo/heart.png'
-                            dil = false;
-                        }
-                    }
-
-
-                    const saves = document.getElementById('save');
-                    let state = false
-                    function saved() {
-
-                        if (state == false) {
-                            saves.src = '../logo/bookmark-black.png'
-                            state = true;
-                        }
-
-                        else {
-                            saves.src = '../logo/bookmark-white.png'
-                            state = false
-                        }
-                    }
-
-
-
-
-                </script>
+              
 
 
 
