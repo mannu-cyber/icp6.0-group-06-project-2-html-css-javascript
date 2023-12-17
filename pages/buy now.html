@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Form</title>
+     <style>
+        .btn{
+            margin: auto;
+            display: block;
+            margin: 20px auto;
+            font-size: 20px;
+            padding: 10px 50px;
+            background-color: rgb(222, 89, 41);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: orangered;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);font-size: 25px;
+        }
+        .block{
+            border-color:black;
+        }
+        .block:hover{
+            border-color: rgb(239, 93, 41);
+        }
+        .form{
+            display: block;
+            border: black;
+        }
+     </style>
+</head>
+<body>
+    
+    <form class="form">
+    
+        <h2>Contact</h2>
+        <input type="Email" class="block" placeholder="Email"/
+        > <br> 
+        <input type="radio" class="block" name="option" id="rs" />
+        <label for="Email"> Email me with news offers</label><br/>
+        <input type="radio" class="block" name="option" id="rs" />
+        <label for="Email"> Don't Email me about news offers</label><br/>
+        <h2>Delivery</h2>
+        <input type ="text" class="block" placeholder="country/Region"/><br/> <br/>
+        <input type="text" class="block" placeholder="First Name"/>
+        <input type="text" class="block" placeholder="LastName"/><br/><br/>
+        <input type="text" class="block" placeholder="Address"/><br/><br/>
+        <input type="text" class="block" placeholder="City"/>
+        <input type="text" class="block" placeholder="state"  />
+        <input type="number" class="block" placeholder="Pincode Number"/><br/><br/>
+        <input type="number" class="block" placeholder="Phone Number"/><br/>
+        <input type="radio" class="block" name="option" id="rs" />
+        <label for=""> Save this information for next time</label><br/>
+        <input type="radio" class="block" name="option" id="rs" />
+        <label for=""> Text me with news and offers</label><br/>
+        <h2>Payment</h2>
+        <p>All transaction are secure and encrypted</p>
+        <input type="radio" class="block" name="payment" id="rs" />
+        <label for="RS">Razorpay Secure(UPL,Cards,Wallets,NetBanking)  </label><br/>
+        <input type="number" class="block" placeholder="Card number"/>
+        <input type="text" class="block" placeholder="Card Holder's name"/>
+        <input type="text" class="block" placeholder="CVV"/><br/>
+        <input type="radio" class="block" name="payment" id="cod" />
+        <label for="COD">Cash on Delivery(COD)</label>
+        <br/>
+        <input type="button" class="btn" value="Pay Now"/>
+    </div>
+
+    </form>
+    
+</body>
+</html>

@@ -192,9 +192,7 @@ header .header-right .hamburger div {
         margin-left:0 ;
     }
 }
-body{
-    background-color: black;
-}
+
 .card{
     display:flex;
             justify-content: space-around;
@@ -208,9 +206,10 @@ body{
     box-shadow:0 0 10px black;
     border-radius: 10px;
     padding: 0 20px;
-    background-color: gray;
+    background-color: rgb(205, 200, 200);
 }
 .product-img{
+    width: 100%;
     height: 150px;
     display: block;
     margin:  auto;
@@ -219,10 +218,10 @@ body{
     
 }.product-img:hover{
     height: 155px;
-    width: 235px;
+    width: 102%;
 }
 .product-img2{
-    width: 210px;
+    width: 100%;
     height: 150px;
     margin: 10 auto;
     margin-top: 10px;
@@ -230,13 +229,16 @@ body{
 }
 .product-img2:hover{
     height: 155px;
-    width: 215px;
+    width: 102%;
 }
 .product-title{
     font-size: 30px;
     text-align: center;
     font-family: h;
     margin: 5px;
+}
+.product-title:hover{
+    color:orangered;
 }
 .product-prize{
     font-size: 20px;
@@ -267,6 +269,9 @@ body{
 .btn-quantity{
     width: 30px;
     cursor: pointer;
+}
+.btn-quantity:hover{
+    width:32px;
 }
 .product-quantity{
     font-size: 25px;
@@ -322,7 +327,6 @@ h1{
     <div class="product-card">
         <img src="./../images/(1).jpg" class="product-img">
         <h2 class="product-title">Turtle </h2>
-        <p class="product-description">The sculpture is a testament to the delicate balance between the strength of the turtle and the ephemeral beauty of blossoming flowers.</p>
         <p class="product-prize">Prize:₹1000</p>
         <div class="quantity-container">
             <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
@@ -334,11 +338,10 @@ h1{
     <div class="product-card">
         <img src="./../images/bird.jpeg" class="product-img2">
         <h2 class="product-title"> Bird</h2>
-        <p class="product-description"> This is a captivating sculpture that beautifully captures the delicate moment when a bird alights on a blooming flower. </p>
         <p class="product-prize">Prize:₹850</p>
         <div class="quantity-container">
             <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
-            <span class="product-quantity" id="quantity-text">1</span>
+            <span class="product-quantity" id="quantity-text1">1</span>
             <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
         </div>
         <button type="button" class="btn">Buy Now</button>
@@ -346,20 +349,7 @@ h1{
     <div class="product-card">
         <img src="./../images/ganesha.jpg" class="product-img2">
         <h2 class="product-title">Ganapati</h2>
-        <p class="product-description">A Ganesha sculpture typically represents Lord Ganesha, a widely revered deity in Hinduism, known as the remover of obstacles and the god of wisdom. </p>
         <p class="product-prize">Prize:₹150</p>
-        <div class="quantity-container">
-            <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
-            <span class="product-quantity" id="quantity-text">1</span>
-            <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
-        </div>
-        <button type="button" class="btn">Buy Now</button>
-    </div>
-    <div class="product-card">
-        <img src="./../images/angle.jpeg" class="product-img2">
-        <h2 class="product-title">Angle</h2>
-        <p class="product-description"></p>
-        <p class="product-prize">Prize:₹800</p>
         <div class="quantity-container">
             <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
             <span class="product-quantity" id="quantity-text">1</span>
@@ -372,7 +362,6 @@ h1{
     <div class="product-card">
         <img src="./../images/swan1.jpeg" class="product-img2">
         <h2 class="product-title">Swan</h2>
-        <p class="product-description">This is a breathtaking pair of swan sculptures that embody the essence of grace, love, and unity.</p>
         <p class="product-prize">Prize:₹1500</p>
         <div class="quantity-container">
             <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
@@ -384,7 +373,6 @@ h1{
     <div class="product-card">
         <img src="./../images/peacock.jpg" class="product-img2">
         <h2 class="product-title"> Peacock</h2>
-        <p class="product-description"> This is a captivating peacock sculpture that celebrates the resplendent beauty and regal presence of the peafowl.</p>
         <p class="product-prize">Prize:₹1250</p>
         <div class="quantity-container">
             <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
@@ -394,9 +382,8 @@ h1{
         <button type="button" class="btn">Buy Now</button>
     </div>
     <div class="product-card">
-        <img src="./../images/Matki Table Lamp.jpg" class="product-img2">
-        <h2 class="product-title"> Mataki Table Lamp</h2>
-        <p class="product-description">This is not just a source of light but a conversation piece that enhances any room's ambiance.It has ability to transform the atmosphere with its radiant glow. </p>
+        <img src="./../images/Table Lamp.jpg" class="product-img2">
+        <h2 class="product-title"> Table Lamp</h2>
         <p class="product-prize">Prize:₹1100</p>
         <div class="quantity-container">
             <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
@@ -405,10 +392,23 @@ h1{
         </div>
         <button type="button" class="btn">Buy Now</button>
     </div>
+</div>
+<div class="card">
     <div class="product-card">
-        <img src="./../images/Golden Flora Brass.jpg" class="product-img2">
-        <h2 class="product-title">Goldan Flora Brass</h2>
-        <p class="product-description"> This is a captivating brass sculpture that seamlessly combines artistry with the warm, lustrous tones of brass.</p>
+        <img src="./../images/angle.jpeg" class="product-img2">
+        <h2 class="product-title">Angle</h2>
+        <p class="product-description"></p>
+        <p class="product-prize">Prize:₹800</p>
+        <div class="quantity-container">
+            <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="./../images/Golden Tree.jpg" class="product-img2">
+        <h2 class="product-title">Goldan Tree</h2>
         <p class="product-prize">Prize:₹1300</p>
         <div class="quantity-container">
             <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
@@ -417,7 +417,17 @@ h1{
         </div>
         <button type="button" class="btn">Buy Now</button>
     </div>
-    
+    <div class="product-card">
+        <img src="./../images/krishna.jpg" class="product-img2">
+        <h2 class="product-title">Krishna</h2>
+        <p class="product-prize">Prize:₹1200</p>
+        <div class="quantity-container">
+            <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
 </div>
 <div class="footer">
 
@@ -481,7 +491,7 @@ h1{
         function increasequantity(){
             let quantity=parseInt(quantityElement.innerText);
             if(quantity<10){
-                quantityElement.innerText=++quantity;
+                quantityElement1.innerText=++quantity;
             }else{
                 alert("you can't add more than 10 items")
             }
@@ -489,12 +499,13 @@ h1{
         function decreasequantity(){
             let quantity=parseInt(quantityElement.innerText);
             if(quantity>1){
-                quantityElement.innerText=--quantity;
+                quantityElement1.innerText=--quantity;
             }else{
                 alert(" you can't add less than 1 items")
         }
         
     }
+    
     hamburger = document.querySelector(".hamburger");
     nav = document.querySelector("nav");
     hamburger.onclick = function(){
