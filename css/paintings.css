@@ -14,7 +14,7 @@ body{
     text-align: center;
     padding: 85px;
     color: rgb(245, 242, 242);
-    box-shadow: 0px 4px 4px 6px rgb(234, 229, 229);
+    shadow: 0px 4px 4px 6px rgb(234, 229, 229);
 }
 .head span{
     color: orange;
@@ -26,23 +26,43 @@ body{
     display: flex;
     justify-content: center;
 }
-/* .paintings .card{
-    width: 350px;
-
-    height: 400px;
+.paintings .card{
+    max-width: 360px;
+    height: 450px;
     border-radius: 6px;
-   
+    margin-inline: 2vw 20px ;
     background-color: rgba(255, 255, 255, 0.603);
     box-shadow: 0px 4px 4px 6px gray;
     cursor:pointer;
-    
 }
-position: relative; */
-
-
-.paintings .card .a{
-    color:#000;
+.paintings .card .b{
+    position: relative;
     text-align: center;
+    color: rgb(8, 8, 8);
+    font-size: 25px;
+    background-color: orange;
+
+}
+.paintings .card .b{
+    width: 140px;
+    height: 40px;
+    border: 3px solid orange;
+    background-color: orange;
+    font-size: 21px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: rgb(20, 20, 20);
+    border-radius: 6px;
+
+}
+.paintings .card .b:hover{
+    border-color: black
+}
+.paintings .card .a{
+    color#000;
+    text-align: center;
+    font-size: 135%;
+
 }
 
 .card img{
@@ -62,12 +82,8 @@ position: relative; */
 
 }
 .card p{
-    display: block;
-    margin: 0 auto;
+    margin-left: 11px;
     margin-top: 11px;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
 }
 .paintings .card:hover{
        border: 2px solid #050505;
@@ -76,22 +92,54 @@ position: relative; */
 }
 
 
+
+
+
+
+
+
+
 .painting{
     display: flex;
     justify-content: center;
 }
 .painting .cards{
-    width: 350px;
-    height: 400px;
+    max-width: 360px;
+    height: 450px;
     border-radius: 6px;
-
+    margin-inline: 2vw 20px ;
     background-color: rgba(255, 255, 255, 0.603);
     box-shadow: 0px 4px 4px 6px gray;
     cursor:pointer;
 }
-.painting .cards .b{
-    color:#000;
+.painting .cards .n{
+    position: relative;
     text-align: center;
+    color: rgb(8, 8, 8);
+    font-size: 25px;
+    background-color: orange;
+
+}
+.painting .cards .n{
+    width: 140px;
+    height: 40px;
+    border: 3px solid orange;
+    background-color: orange;
+    font-size: 21px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: rgb(20, 20, 20);
+    border-radius: 6px;
+
+}
+.painting .cards .n:hover{
+    border-color: black
+}
+.painting .cards .b{
+    color#000;
+    text-align: center;
+    font-size: 135%;
+
 }
 
 .cards img{
@@ -118,3 +166,4 @@ position: relative; */
        box-shadow: 0px 4px 4px 6px rgb(234, 229, 229);
        padding: 1.0vw 3px;
 }
+
