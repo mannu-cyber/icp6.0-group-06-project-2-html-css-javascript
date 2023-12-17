@@ -29,12 +29,11 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-color: #000000;
+   
 }
 
 .main {
-    width: 100%;
-    height: 100;
+  
     position: relative;
     overflow-x: hidden;
 }
@@ -56,7 +55,7 @@ a {
 {
     position: relative;
     background-color: #9be0ee;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     padding-top: 2vw;
 }
@@ -68,6 +67,7 @@ a {
    .swiper-slide {
     background-position: center;
     background-size: cover;
+    position: relative;
   }
 
  .swiper-slide img {
@@ -79,6 +79,39 @@ a {
 /* filter: contrast(); */
   }
 
+.swiper-slide button{
+    position: absolute;
+    bottom: 250px;
+    left: 30%;
+    padding: var(--btn-padding);
+    background-color: var(--btn-bg);
+    border: none;
+    font-size: 1.3vw;
+    font-family: h;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+
+.swiper-slide button:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+    scale: .97;
+}
+
+.swiper-slide button i {
+
+    opacity: 0;
+    transition: .5s;
+}
+
+.swiper-slide button:hover i {
+    opacity: 1;
+    display: inline-block;
+}
+
+
 
 
   /* End of  Page 1 */
@@ -87,8 +120,8 @@ a {
 
 .page2{
 
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
 }
 
 /* End of Page 2 */ 
@@ -100,11 +133,15 @@ a {
 .footer{
     width: 100vw;
     height: 70vh;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-evenly;
     /* align-items: center; */
     padding-top: 5vw;
+}
+
+.footer a{
+    color: #ffffff;
 }
 
 .social-media h3{
