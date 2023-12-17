@@ -60,20 +60,39 @@ a {
     height: 100vh;
     padding-top: 2vw;
 }
-.page1 .swiper {
+ .swiper {
     width: 100%;
     height: 100%;
   }
 
-  .page1 .swiper-slide {
+   .swiper-slide {
     background-position: center;
     background-size: cover;
+    position: relative;
   }
 
- .page1 .swiper-slide img {
+ .swiper-slide img {
     display: block;
-    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+/* filter: contrast(); */
   }
+
+.swiper-slide button{
+    position: absolute;
+    bottom: 250px;
+    left: 30%;
+    padding: var(--btn-padding);
+    background-color: var(--btn-bg);
+    border: none;
+    font-size: 1.3vw;
+    font-family: h;
+    font-weight: 800;
+    cursor: pointer;
+
+}
 
 
 

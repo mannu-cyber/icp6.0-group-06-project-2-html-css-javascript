@@ -7,7 +7,7 @@
     <title>Pixel | Palette | Gallery</title>
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="shortcut icon" href="./logo/ppg-favicon-color.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -19,11 +19,11 @@
         <!-- Start of Navbar -->
         <header>
             <div class="header-left">
-                <div class="logo">
+                <div class="logo ">
                     <img src="../logo/dark theme.png" width="40px" alt="">
-                    
                 </div>
                 <nav>
+                    <p class="logo-name">Pixel PALLETE Gallery</p>
                     <ul>
                         <li>
                             <a href="./index.html" class="active">Home</a>
@@ -44,7 +44,7 @@
             </div>
             <div class="header-right">
                 <div class="login-signup">
-                    <a href=""><i class="ri-user-fill"></i></a> 
+                    <a href="./pages/login.html"><i class="ri-user-fill"></i></a> 
                 </div>
                 <div class="hamburger">
                     <div></div>
@@ -64,24 +64,32 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=6001"    />
+          <button type="button"> Explore</button>
+          
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              <img src="https://images.pexels.com/photos/414144/pexels-photo-414144.jpeg?auto=compress&cs=tinysrgb&w=600" />
+              <button type="button"> Explore</button>
+
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              <img src="https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg?auto=compress&cs=tinysrgb&w=600" />
+           
+              <button type="button"> Explore</button>
+
           </div>
           <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              <img src="https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?auto=compress&cs=tinysrgb&w=600" />
+              <a href="./pages/gallery.html"><button type="button"> Explore</button></a>
+
           </div>
         </div>
-    
       </div>
 
   </div>
     
-</div>
+
 <!-- End of Page1 -->
 
 
@@ -153,17 +161,29 @@
 </div>
 
 </div>
+</div>
 
 
 
-    </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="./js/navbar.js"></script>
     <script src="./js/index.js"></script>
-   
 
-  <script src="./js/navbar.js"></script>
+    <script>
+        let swiper = new Swiper(" .mySwiper", {
+    spaceBetween: 30,
+    effect: "fade",
+    loop: "true",
+    grabCursor: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: "true",
+    },
+  });
+    </script>
 </body>
 
 </html>
