@@ -1,4 +1,4 @@
- @font-face {
+@font-face {
     font-family: h;
     src: url(../fonts/Laila\ Regular.ttf);
  }
@@ -13,9 +13,9 @@
     padding: 0;
     box-sizing: border-box;
  }
- 
-html, body{
-    width: 100%;
+
+ html,body{
+    width:100%;
 height: 100%;
 }
 
@@ -23,60 +23,58 @@ height: 100%;
     width:290px;
     height: 430px;
     background-color: pink;
-  margin: 4vw auto;
+     margin: 4vw auto;
     border-radius: 10px;
-    box-shadow: 0 5px 5px #999;
-
-    padding: 1vw;
+    box-shadow: 0 5px 5px;
     padding-top: 1vw;
-
-
+    padding: 1vw;
+ 
 
 }
+
 h1{
     text-align: center;
     font-family: h;
- 
+
 }
 
-
-
 .text{
-    height: 10px;
+    height: 20px;
     font-size: 7px;
     border-radius: 1px;
     width: 100px;
     margin-left: 15px;
     margin-top: 5px;
+    font-family: h;
 }
 
 
 
-
-form .name{
+form.name{
     font-size: 1.3vw;
     padding: 8px 30px;
     border-radius: 5px;
     border: none;
-    display: block  ;
-    width: 100%;
-    margin: 1vw auto;
+    display: block;
+    width:100%;
+    margin:1vw auto;
 font-family: h;
 }
 
-form :nth-child(2){
-
+form :nth-child(5){
+    
     margin-top: 3vw;
 }
 
 
 
+
 form button{
-    padding: 4px 30px;
+    padding:4px 30px;
     display: block;
-    margin: 0 auto;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     font-family: p;
     font-weight: 700;
-cursor: pointer;
+    cursor: pointer;
+    margin: 0vw auto;
 }
