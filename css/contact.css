@@ -9,25 +9,26 @@ body{
     font-weight: bolder;
 }
 .main-contact-container{
-    background-color: aliceblue;
+    background-color: rgb(202, 223, 242);
     width: 70%;
-    height: 90vh;
+    height: 900px;
     border-radius: 2px;
     margin: 0 auto;
     margin-top: 4vw;
 }
 .main-image{
     display: block;
-    height: 180px;
+    height: 300px;
+    width: 550px;
     margin: 5px;
     margin-left:auto;
     margin-right: auto;
-    border-radius: 80%;
+    border-radius: 10px;
 }
 .contact-text{
     text-align: start;
-    width: 300px;
-    height: 30px;
+    width: 320px;
+    height: 35px;
     border-radius: 5px;
     margin: 10px;
     padding: 5px;
@@ -39,7 +40,14 @@ body{
     font-family: p;
 }
 .second-container{
-    margin-left: 10px;
+    margin-left: 20px;
+}
+.third-container{
+    margin-left: 45px;
+}
+.information-container{
+    display: flex;
+    flex-wrap: wrap;
 }
 .contact-btn{
     margin: 5px;
@@ -49,5 +57,38 @@ body{
     color: aliceblue;
     border-radius: 10px;
     margin-left: 120px;
-    width: 120px;
+    width: 130px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.contact-btn:hover{
+    color:red;
+}
+.small-symbol{
+    width: 50px;
+    height: 45px;
+    display: inline;
+    margin: 10px;
+    background: none;
+}
+.small-symbol:hover{
+    cursor: pointer;
+    transform: translateY(-8px);
+}
+.contact-suggest{
+    text-align: start;
+    width: 320px;
+    height: 60px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+.heading{
+    font-weight: bold;
+    padding: 5px;
+}
+.info-para{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
