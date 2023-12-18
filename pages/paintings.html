@@ -1,68 +1,516 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-        <title>Art Project </title>
-        <link rel="stylesheet" href="../css/paintings.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paintings</title>
+    <style>
+        @font-face {
+    font-family: h;
+    src: url(../fonts/Laila\ Regular.ttf);
+}
+
+@font-face {
+    font-family: p;
+    src: url(../fonts/Hind\ Guntur\ Regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+ 
+}
+img {
+    width: 100%;
+}
+
+
+ header {
+    position: fixed;
+    z-index:120;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #000000;
+
+}
+header .header-left {
+    display: flex;
+    align-items: center;
+
+}
+header .header-left .logo {
+    width: 140px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 18px;
+    padding: 1px 10px;
+    transition: 0.2s;
+}
+
+nav ul{
+    margin-left: 18vw;
+}
+
+
+nav a {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1px 4px;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+    font-family: h;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0px;
+    background-color: #FA4738;
+    transition: .5s ease;
+}
+
+
+
+nav a:hover {
+    color: #f70000;
+
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+
+nav ul li a:hover {
+    color:  #f70000;
+}
+nav .login-signup {
+    display: none;
+}
+
+header .header-right{
+    display:none;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+header .login-signup {
+    color: #cfd9e0;
+    font-weight: bold;
+}
+header .login-signup a {
+    display: inline-block;
+    color: #0b2239;
+    background: #ffffff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.login-signup a:hover{
+    background-color: #f70000;
+    scale: 1.1;
+}
+
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -300%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #000000;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: -1;
+    }
+
+    nav ul{
+        margin-left:0 ;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+    nav ul{
+        margin-left:0 ;
+    }
+}
+
+.card{
+    display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+}
+        .product-card{
+    width: 300px;
+    border: 1px solid gray;
+    display: block;
+    margin: 20px auto;
+    box-shadow:0 0 10px black;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: rgb(205, 200, 200);
+}
+.product-img{
+    width: 100%;
+    height: 150px;
+    display: block;
+    margin:  auto;
+    text-align: center;
+    padding: 10px;
+    
+}.product-img:hover{
+    height: 155px;
+    width: 102%;
+}
+.product-img2{
+    width: 100%;
+    height: 150px;
+    margin: 10 auto;
+    margin-top: 10px;
+    display: block;
+}
+.product-img2:hover{
+    height: 155px;
+    width: 102%;
+}
+.product-title{
+    font-size: 30px;
+    text-align: center;
+    font-family: h;
+    margin: 5px;
+}
+.product-title:hover{
+    color:orangered;
+}
+.product-prize{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: p;
+    margin: 5px;
+}
+.btn{
+    display: block;
+    margin: 20px auto;
+    font-size: 20px;
+    padding: 10px 50px;
+    background-color: rgb(222, 89, 41);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+            background-color: #565656;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+.quantity-container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.btn-quantity{
+    width: 30px;
+    cursor: pointer;
+}
+.btn-quantity:hover{
+    width:32px;
+}
+.product-quantity{
+    font-size: 25px;
+}
+h1{
+    font-family: h;
+    text-align: center;
+    color: rgb(234, 88, 35);
+    margin-top: 100px;
+}
+
+    </style>
 </head>
 <body>
-    
-<div class="pack" id="paintings">
-    <div class="head">
-        <h1><span> Beut</span>iful <span>Paint</span>ings</h1>
-        
-    </div>
-    <div class="paintings">
-        <div class="card">
-            <img src="../images/flower1.jpg " alt="">
-            <h3 class="a">Artistic Impressions</h3>
-            <p><b> The design of a painting is its visual format: the arrangement of its lines, shapes, colours, tones, and textures into an expressive pattern.</b> </p><br>
-            <button class="b">Buy Now</button>
-
-            
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="../logo/dark theme.png" width="40px" alt="">
+                
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="./pages/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./pages/about.html">About</a>
+                    </li>
+                  
+                </ul>
+                
+            </nav>
         </div>
-        <div class="card">
-            <img src="../images/parrote.jpg" alt="">
-            <h3 class="a">Pretty Parrote</h3>
-            <p><b>The 19th century painters in Western societies began to lose their social position and secure patronage. The own exhibitions and charging. </b></p><br>
-            <button class="b">Buy Now</button>
-
-        
+        <div class="header-right">
+            <div class="login-signup">
+                <a href=""><i class="ri-user-fill"></i></a> 
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-        <div class="card">
-            <img src="../images/4.jpg" alt="">
-            <h3 class="a">Colorful Critters</h3>
-            <p> <b>The creation of certain aesthetic qualities, in a two-dimensional visual language. arrangement of its lines, shapes, colours, tones </b> </p><br>
-            <button class="b">Buy Now</button>
-
+    </header>
+    <h1>Beutiful Paintings</h1>
+<div class="card">
+    <div class="product-card">
+        <img src="../images/3.jpg" class="product-img">
+        <h2 class="product-title">fairytale </h2>
+        <p class="product-prize">Prize:₹1000</p>
+        <div class="quantity-container">
+            <img src="../images/minus (3).png" class="btn-quantity" onclick="decreasequantity(this)"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../images/add.png" class="btn-quantity" onclick="increasequantity(this)"/>
         </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="../images/4.jpg" class="product-img2">
+        <h2 class="product-title"> Pallette Work</h2>
+        <p class="product-prize">Prize:₹850</p>
+        <div class="quantity-container">
+            <img src="../images/minus (3).png" class="btn-quantity" onclick="decreasequantity(this)"/>
+            <span class="product-quantity" id="quantity-text1">1</span>
+            <img src="../images/add.png" class="btn-quantity" onclick="increasequantity(this)"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="../images/parrote.jpg" class="product-img2">
+        <h2 class="product-title">Parrote</h2>
+        <p class="product-prize">Prize:₹150</p>
+        <div class="quantity-container">
+            <img src="../images/minus (3).png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../images/add.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+</div>
+<div class="card">
+    <div class="product-card">
+        <img src="../images/flower1.jpg" class="product-img2">
+        <h2 class="product-title">Swan</h2>
+        <p class="product-prize">Prize:₹1500</p>
+        <div class="quantity-container">
+            <img src="../images/minus (3).png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../images/add.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="../images/8.jpg" class="product-img2">
+        <h2 class="product-title"> Brush Fuel</h2>
+        <p class="product-prize">Prize:₹1250</p>
+        <div class="quantity-container">
+            <img src="../images/minus (3).png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../images/add.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="../images/5.jpg" class="product-img2">
+        <h2 class="product-title"> color tree</h2>
+        <p class="product-prize">Prize:₹1100</p>
+        <div class="quantity-container">
+            <img src="../images/minus (3).png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../images/add.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+</div>
+<div class="card">
+    <div class="product-card">
+        <img src="../images/2.jpg" class="product-img2">
+        <h2 class="product-title">Angle</h2>
+        <p class="product-description"></p>
+        <p class="product-prize">Prize:₹800</p>
+        <div class="quantity-container">
+            <img src="../images/minus (3).png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../images/add.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="../images/flower2.jpg" class="product-img2">
+        <h2 class="product-title">affirmations</h2>
+        <p class="product-prize">Prize:₹1300</p>
+        <div class="quantity-container">
+            <img src="../images/minus (3).png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../images/add.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+    <div class="product-card">
+        <img src="../images/parrote1.jpg" class="product-img2">
+        <h2 class="product-title">Parrote</h2>
+        <p class="product-prize">Prize:₹1200</p>
+        <div class="quantity-container">
+            <img src="../images/minus (3).png" class="btn-quantity" onclick="decreasequantity()"/>
+            <span class="product-quantity" id="quantity-text">1</span>
+            <img src="../images/add.png" class="btn-quantity" onclick="increasequantity()"/>
+        </div>
+        <button type="button" class="btn">Buy Now</button>
+    </div>
+</div>
+<div class="footer">
+
+    <div class="social-media sections">
+    <h3>Free photos shared by talented creators.</h3>
+    <p>Download our App</p>
+    <div class="download">
+        <button type="button"> <img src="../logo/appstore.png" alt=""></button>
+        <button type="button"><img src="../logo/playstore.png" alt=""></button>
+    </div>
+    
+    <div class="handle">
+     
+    <a href="www.facebook.com">   <i class="ri-facebook-line"></i></a>
+    <a href="www.instagram.com">    <i class="ri-instagram-line"></i>
+    </a>
+      <a href="www.youtube.com">  <i class="ri-youtube-line"></i></a>
+       <a href="www.twitter.com"> <i class="ri-twitter-line"></i></a>
+       <a href="www.pinterest.com"> <i class="ri-pinterest-line"></i></a>
     
     </div>
     
-</div>
-<br/> <br/>
-<div class="painting">
-    <div class="cards">
-        <img src="../images/flower2.jpg" alt="">
-        <h3 class="b">Artistic Impressions</h3>
-        <p> <b>The design of a painting is its visual format: the arrangement of its lines, shapes, colours, tones, and textures into an expressive pattern. </b></p><br>
-        <button class="n">Buy Now</button>
-
+    </div>
+    
+    
+    <div class="quick-links sections">
+    <h3>Quick links</h3>
+    
+    <a href="../index.html">Home</a>
+    <a href="../pages/gallery.html">Gallery</a>
+    <a href="../pages/contact.html">Contact</a>
+    <a href="../pages/about.html">About</a>
+    
+    </div>
+    
+    
+    <div class="stock-images sections">
+        <h3>Stock Images</h3>
+    <button type="button"><b>Black and white photography<b></button>
+    
+        <button type="button"><b>Happy birthday images</b></button>
+        <button type="button"><b>Love wallpaper</b></button>
+        <button type="button"><b>Samsung wallpaper</b></button>
+        <button type="button"><b>4K wallpaper</b></button>
+        <button type="button"><b>iPhone wallpaper</b></button>
+        <button type="button"><b>Lock screen wallpaper</b></button>
+        <button type="button"><b>Cool wallpapers</b></button>
+        <button type="button"><b>Best HD wallpapers</b></button>
+        <button type="button"><b>Happy new year images</b></button>
+        <button type="button"><b>Free business videos</b></button>
+        <button type="button"><b>Galaxy wallpaper</b></button>
+    
+    
+    </div>
+    
+    </div>
+   
+     </div>
+    <script>
+        const quantityElement=document.getElementById("quantity-text")
+        function increasequantity(value){
+        let quantity=parseInt(value.innerText);
+            if(value>10){
+                quantityElement1.innerText=++quantity;
+            }else{
+                alert("you can't add more than 10 items")
+            }
+        }
+        function decreasequantity(value){
+        let quantity=parseInt(value.innerText);
+            if(value<1){
+                quantityElement1.innerText=--quantity;
+            }else{
+                alert(" you can't add less than 1 items")
+        }
         
-    </div>
+    }
     
-    <div class="cards">
-        <img src="../images/parrote1.jpg" alt="">
-        <h3 class="b">Pretty Parrote</h3>
-        <p><b> The creation of certain aesthetic qualities, in a two-dimensional visual language. arrangement of its lines, shapes, colours, tones </b> </p><br>
-        <button class="n">Buy Now</button>
-
-    </div>
-
-</div>
-
-</div>
-<br/><br/>
-
-</script>
+    hamburger = document.querySelector(".hamburger");
+    nav = document.querySelector("nav");
+    hamburger.onclick = function(){
+    nav.classList.toggle("active");
+}
+    </script>
 </body>
 </html>
