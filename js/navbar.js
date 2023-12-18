@@ -19,35 +19,5 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
-const hertElement = document.getElementById('hert');
-let dil = false;
-function clrChang() {
-
-    if (dil == false) {
-        hertElement.src = '../logo/red-hert.png'
-        dil = true
-    }
-
-    else {
-        hertElement.src = '../logo/heart.png'
-        dil = false;
-    }
-}
-
-
-const saves = document.getElementById('save');
-let state = false
-function saved() {
-
-    if (state == false) {
-        saves.src = '../logo/bookmark-black.png'
-        state = true;
-    }
-
-    else {
-        saves.src = '../logo/bookmark-white.png'
-        state = false
-    }
-}
 
 
