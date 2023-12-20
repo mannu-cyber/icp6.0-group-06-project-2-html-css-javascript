@@ -11,6 +11,207 @@
 
     <style>
    
+      @font-face {
+      font-family: h;
+       src: url(../fonts/Laila\ Regular.ttf);
+     }
+
+     @font-face {
+    font-family: p;
+    src: url(../fonts/Hind\ Guntur\ Regular.ttf);
+     }
+
+        body{
+            text-decoration: none;
+            background-color:rgb(255, 255, 255);
+            color: #000;
+        }
+        
+            .header-about {
+                width: 300px;
+                font-size: 50px ;
+                font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+        
+                align-items: center;
+            }
+
+           
+            .page-header {
+             margin: 5px ;
+            padding: 20px 5px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-right: 20%;
+        }
+
+        .header-img {
+            margin: 2px 49px;
+            height: 300px;
+            border-radius: 50px;
+            flex-basis: 20%;
+            animation: animate 3s linear infinite;
+            width:31%;
+            margin-left: 35%;
+            filter: drop-shadow(15px 7px 6px black);
+
+        }
+        .paragraph{
+            font-size: 25px;
+            font-style: normal;
+            font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+           
+        }
+
+        
+      
+    .content{
+  margin-top: 1vw;
+  width: 60%;
+}
+
+/*  cards start*/
+/*  cards start*/
+       .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 20px 0;
+            padding: 10px;
+
+        }
+
+        .team-member-card {
+            width: 300px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 25px 20px;
+            margin: 10px 20px;
+            background-color: white;
+            border-radius: 59px;
+            position: relative;
+            box-shadow: 7px 7px 7px  grey;
+            height:390px;
+        }
+
+        .card-title {
+            font-size: 30px;
+            font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+            color: black;
+
+            
+        }
+
+        .team-member-card:hover {
+            border: 3px solid black;
+            cursor: pointer;
+            text-align: center;
+            margin: 10px 21px;
+            transition: 0.5s;
+            overflow: hidden;
+        }
+         .card-img-1 {
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            display: block;
+            justify-content: center;
+            border-radius: 17%;
+        }
+        
+        
+        .card-img{
+            width: 150px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            display: block;
+            justify-content: center;
+            border-radius: 2px;
+            border-radius: 20%;
+        }
+
+        .name{
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+            font-size: 56px;
+
+        }
+        .card-container:hover {
+          box-shadow: 80px 8px 100px black;
+          border-radius: 30px;
+       }
+       .team-member-card {
+        box-shadow: 3px 5px 7px black;
+        margin-top: 7px;
+         margin-left: -7.8px;
+       }
+       .group-Name{
+        font-size: 21px;
+        color: #000;
+        padding-top: 20px;
+       }
+        
+
+  
+
+@keyframes animate{
+            0%{
+                transform: scale(1.1);
+            }
+            50%{
+                transform: scale(1);
+            }
+            90%{
+                transform: scale(1.1);
+            }
+        }
+        @media only screen and (max-width:1200px) and (min-width:1001px){
+            .header-about {
+                width: 300px;
+                font-size: 50px ;
+                font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+                color:white;
+                align-items: center;
+            }
+
+           
+            .page-header {
+             margin: 5px ;
+            padding: 20px 5px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-right: 20%;
+        }
+
+        .header-img {
+            margin: 2px 49px;
+            height: 250px;
+            border-radius: 50px;
+            flex-basis: 20%;
+            animation: animate 3s linear infinite;
+            width:30%;
+            margin-left: 35%;
+            filter: drop-shadow(15px 7px 6px black);
+
+        }
+        .paragraph{
+            font-size: 20px;
+            font-style: normal;
+            font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+           
+        }
+
+        
+      
+  
+ }
 
  </style>
 </head>
@@ -88,15 +289,7 @@
       <div class="team-member-card">
           <img src="../img/Akshada.jpeg" class="card-img-1">
           <p class="card-title">Name : Akshada Anawade</p>
-
-<div class="icon">
-    <i class="ri-instagram-line"> <a href=""></a></i>
-    <i class="ri-github-fill"><a href=""></a></i>
-
-</div>
-
-
-          <p>Akshada</p>
+          <p>ICP-6.0 </p>
           
 
       </div>
@@ -106,13 +299,7 @@
       <div class="team-member-card">
           <img src="../img/Rohini.jpeg" class="card-img-1">
           <p class="card-title">Name : Rohini Kandekar</p>
-          <p>Rohini Kandekar</p>
-          
-<div class="icon">
-    <i class="ri-instagram-line"> <a href=""></a></i>
-    <i class="ri-github-fill"><a href=""></a></i>
-
-</div>
+          <p>ICP-6.0</p>
          
       </div>
 
@@ -121,7 +308,7 @@
       <div class="team-member-card">
           <img src="../img/vikrant.png" class="card-img-1">
           <p class="card-title">Name : Vikrant Patil</p>
-          <p>vikrant Patil</p>
+          <p>ICP-6.0</p>
           
 <div class="icon">
     <i class="ri-instagram-line"> <a href=""></a></i>
@@ -132,13 +319,19 @@
 
 
 
+      <div class="team-member-card">
+          <img src="../img/Leena.jpeg" class="card-img-1">
+          <p class="card-title">Name : Leena Yenkar</p>
+          <p>ICP-6.0</p>
+          
+      </div>
 
 
 
       <div class="team-member-card">
           <img src="../img/Anjali.jpeg" class="card-img-1">
           <p class="card-title">Name :Anjali Pise</p>
-          <p>anjali Pise</p>
+          <p>ICP-6.0</p>
           
 <div class="icon">
     <i class="ri-instagram-line"> <a href=""></a></i>
@@ -152,13 +345,8 @@
       <div class="team-member-card">
           <img src="../img/preeti.jpg" class="card-img-1">
           <p class="card-title">Name :Preeti Chothe </p>
-          <p>Preeti Chothe</p>
-
-<div class="icon">
-    <i class="ri-instagram-line"> <a href=""></a></i>
-    <i class="ri-github-fill"><a href=""></a></i>
-
-</div>
+          <p>ICP-6.0</p>
+          
       </div>
 
 
@@ -166,7 +354,7 @@
       <div class="team-member-card">
           <img src="../img/about/sha" class="card-img-1">
           <p class="card-title">Name : </p>
-          <p>Swati Nimje</p>
+          <p>ICP-6.0</p>
           
 <div class="icon">
     <i class="ri-instagram-line"> <a href=""></a></i>
@@ -181,34 +369,21 @@
 <div class="badtmeej-log">
 
 
-    <div class="team-member-card">
-        <img  src="../img/vishal.png" class="card-img">
-        <p class="card-title">Name : </p>
-        <p>Vishal </p>
-      
-<div class="icon">
-  <i class="ri-instagram-line"> <a href=""></a></i>
-  <i class="ri-github-fill"><a href=""></a></i>
-
-</div>
-    </div>
-
-
-    <div class="team-member-card">
-        <img src="../img/Leena.jpeg" class="card-img-1">
-        <p class="card-title">Name : Leena Yenkar</p>
-        <p>Leena Yenkar</p>
+      <div class="team-member-card">
+          <img src="../img/about" class="card-img">
+          <p class="card-title">Name : </p>
+          <p>ICP-6.0</p>
         
-<div class="icon">
-  <i class="ri-instagram-line"> <a href=""></a></i>
-  <i class="ri-github-fill"><a href=""></a></i>
-
-</div>
-</div>
-
-</div>
+      </div>
 
 
+
+      <div class="team-member-card">
+          <img src="../img/about/anjali.jpeg" class="card-img">
+          <p class="card-title">Name : </p>
+          <p>ICP-6.0</p>
+          
+      </div>
   </div>
     
   
