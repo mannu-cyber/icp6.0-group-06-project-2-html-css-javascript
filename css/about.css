@@ -49,8 +49,8 @@
           font-size: 20px;
           font-style: normal;
           font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+        }
          
-      }
 
       
     
@@ -69,6 +69,15 @@ width: 60%;
           padding: 10px;
 overflow: hidden;
       }
+
+
+.team-member-card p{
+    text-transform: capitalize;
+font-size: 18px;
+margin-top: 10px;
+}
+
+
 
       .team-member-card {
           width: 330px;
@@ -103,9 +112,7 @@ overflow: hidden;
           box-shadow: 0 0 20px gray;
         }
 
-        .team-member-card p{
-            font-size: 18px;
-        }
+      
 
         .card-container  .icon{
      
