@@ -150,6 +150,14 @@ header .header-right .hamburger div {
     background: #fff;
 }
 @media only screen and (max-width: 1000px) {
+
+    .logo img{
+width: 60px;
+}
+
+
+
+
     header {
         padding: 0 20px;
     }
@@ -179,8 +187,18 @@ header .header-right .hamburger div {
     header .header-left nav ul {
         display: block;
     }
+
+header i{
+    font-size: 20px;
+}
+
+
+
 }
 @media only screen and (max-width: 500px) {
+
+
+
     nav .login-signup {
         display: block;
         margin-top: 20px;
@@ -190,5 +208,9 @@ header .header-right .hamburger div {
     }
     nav ul{
         margin-left:0 ;
+    }
+
+     i{
+        font-size: 50px;
     }
 }

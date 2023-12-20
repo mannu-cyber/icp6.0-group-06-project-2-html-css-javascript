@@ -14,6 +14,11 @@ width: 100%;
 height: 100%;
 }
 
+.main{
+    position: relative;
+    overflow: hidden;
+}
+
 
 .page{
     margin-top: 5vw;
@@ -33,8 +38,9 @@ height: 100%;
 columns: 4 300px;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 10px;
+  margin-left: 40px;
     overflow: hidden;
+ 
 }
 
 .img-container {
@@ -68,6 +74,7 @@ width: 30px;
     transition: .5s;
 }
 .img-container:hover .hert{
+
     opacity: 1;
 }
 
@@ -110,4 +117,34 @@ width: 30px;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+}
+
+@media (max-width:660px) {
+
+
+    .heading{
+        margin-top: 15vw;
+    }
+
+    .gallery{
+        margin-top: 5vw;
+    }
+    
+.gallery .img-container{
+    display: block;
+margin: 0 auto;
+width: 400px;
+}
+
+}
+
+
+
+
+@media (min-width:661px) and (max-width:1120px) {
+
+    .heading{
+        margin-top: 10vw;
+    }
+    
 }
