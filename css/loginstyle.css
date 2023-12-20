@@ -20,13 +20,12 @@ height: 100%;
 }
 
  .box{
-    width:290px;
+    width:330px;
     height: 430px;
-    background-color: pink;
+    background-color:rgb(202, 223, 242);
      margin: 4vw auto;
     border-radius: 10px;
-    box-shadow: 0 5px 5px;
-    padding-top: 1vw;
+    box-shadow: 0 5px 5px 0;
     padding: 1vw;
  
 
@@ -39,7 +38,7 @@ h1{
 }
 
 .text{
-    height: 20px;
+    height: 10px;
     font-size: 7px;
     border-radius: 1px;
     width: 100px;
@@ -50,7 +49,7 @@ h1{
 
 
 
-form.name{
+form .name{
     font-size: 1.3vw;
     padding: 8px 30px;
     border-radius: 5px;
@@ -77,4 +76,7 @@ form button{
     font-weight: 700;
     cursor: pointer;
     margin: 0vw auto;
+    background-color: black;
+    color: aliceblue;
+    border-radius:5px ;
 }
