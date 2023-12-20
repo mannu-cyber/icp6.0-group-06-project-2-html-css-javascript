@@ -22,7 +22,7 @@
 }
 
 .formdesign input {
-    width: 70%;
+    width: 90%;
     padding: 8px 30px;
     border: none;
     margin:1vw auto;
@@ -47,18 +47,19 @@
     cursor: pointer;
     background-color: black;
     color: aliceblue;
+    border-radius: 5px;
 }
 
 
 .container {
-    background-color: pink;
+    background-color: rgb(202, 223, 242);
     padding: 1vW;
     padding-top: 1vW;
-    width: 330px;
+    width: 400px;
     margin: 4vw auto;
     border-radius: 10px;
     box-shadow: 0 5px 5px #999;
-    height: 430px;
+    height: 500px;
 }
 
 .heading {
@@ -68,7 +69,7 @@
 }
 .input-box{
     height:50px;
-    width:800px;
+    width:900px;
     font-size: 7px;
     border-radius: 1px;
     margin-left: 15px;

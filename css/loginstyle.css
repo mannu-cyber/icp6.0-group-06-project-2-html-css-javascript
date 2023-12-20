@@ -22,7 +22,7 @@ height: 100%;
  .box{
     width:330px;
     height: 430px;
-    background-color:pink;
+    background-color:rgb(202, 223, 242);
      margin: 4vw auto;
     border-radius: 10px;
     box-shadow: 0 5px 5px 0;
@@ -78,4 +78,5 @@ form button{
     margin: 0vw auto;
     background-color: black;
     color: aliceblue;
+    border-radius:5px ;
 }
