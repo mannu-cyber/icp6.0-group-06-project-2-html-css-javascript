@@ -20,7 +20,7 @@ height: 100%;
 }
 
  .box{
-    width:290px;
+    width:330px;
     height: 430px;
     background-color:pink;
      margin: 4vw auto;
@@ -76,4 +76,6 @@ form button{
     font-weight: 700;
     cursor: pointer;
     margin: 0vw auto;
+    background-color: black;
+    color: aliceblue;
 }

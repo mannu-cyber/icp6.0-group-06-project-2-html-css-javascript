@@ -45,6 +45,8 @@
     font-family: p;
     font-weight: 700;
     cursor: pointer;
+    background-color: black;
+    color: aliceblue;
 }
 
 
@@ -52,7 +54,7 @@
     background-color: pink;
     padding: 1vW;
     padding-top: 1vW;
-    width: 290px;
+    width: 330px;
     margin: 4vw auto;
     border-radius: 10px;
     box-shadow: 0 5px 5px #999;
