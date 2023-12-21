@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sculpture Art</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <style>
         @font-face {
     font-family: h;
@@ -22,6 +26,12 @@
     list-style: none;
  
 }
+
+
+.main{
+    overflow:hidden ;
+}
+
 img {
     width: 100%;
 }
@@ -194,10 +204,25 @@ header .header-right .hamburger div {
 }
 
 .card{
+    position: relative;
     display:flex;
             justify-content: space-around;
             flex-wrap: wrap;
 }
+
+.heading{
+    font-size: 2.5vw;
+}
+
+
+.heading::before{
+    content: "";
+    position: absolute;
+    top: 200px;
+    width: 24vw;
+    height: 2vw;
+}
+
         .product-card{
     width: 300px;
     border: 1px solid gray;
@@ -206,19 +231,26 @@ header .header-right .hamburger div {
     box-shadow:0 0 10px black;
     border-radius: 10px;
     padding: 0 20px;
+<<<<<<< HEAD
     background-color:#bcc8cf;
+=======
+    background-color: rgb(205, 200, 200);
+    overflow: hidden;
+>>>>>>> 55ac147fcdecdf945b2ae187c3bc080a3fb93a34
 }
-.product-img{
+.product-img2{
     width: 100%;
     height: 150px;
     display: block;
     margin:  auto;
     text-align: center;
     padding: 10px;
-    
-}.product-img:hover{
-    height: 155px;
-    width: 102%;
+    transition: linear .5s;
+}
+
+
+.product-img:hover{
+  scale: .95;
 }
 .product-img2{
     width: 100%;
@@ -377,7 +409,7 @@ border: none;
 
     </style>
 </head>
-<body>
+<div class="main">
     <header>
         <div class="header-left">
             <div class="logo">
@@ -405,7 +437,7 @@ border: none;
         </div>
         <div class="header-right">
             <div class="login-signup">
-                <a href=""><i class="ri-user-fill"></i></a> 
+                <a href="../pages/login.html"><i class="ri-user-fill"></i></a> 
             </div>
             <div class="hamburger">
                 <div></div>
@@ -414,7 +446,7 @@ border: none;
             </div>
         </div>
     </header>
-    <h1>sculpture</h1>
+    <h1 class="heading">Buy our merchandise</h1>
 <div class="card">
     <div class="product-card">
         <img src="./../images/(1).jpg" class="product-img">
@@ -581,11 +613,12 @@ border: none;
     </div>
    
      </div>
+   
     <script>
     
         const quantityElement=document.getElementById("quantity-text")
+        let quantity=parseInt(quantityElement.innerText);
         function increasequantity(){
-            let quantity=parseInt(quantityElement.innerText);
             if(quantity<10){
                 quantityElement.innerText=++quantity;
             }else{
@@ -593,7 +626,7 @@ border: none;
             }
         }
         function decreasequantity(){
-            let quantity=parseInt(quantityElement.innerText);
+
             if(quantity>1){
                 quantityElement.innerText=--quantity;
             }else{

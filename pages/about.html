@@ -1,319 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <style>
-      @font-face {
-      font-family: h;
-       src: url(../fonts/Laila\ Regular.ttf);
-     }
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
 
-     @font-face {
-    font-family: p;
-    src: url(../fonts/Hind\ Guntur\ Regular.ttf);
-     }
 
-        body{
-            text-decoration: none;
-            background-color:rgb(255, 255, 255);
-            color: #000;
-        }
-        
-            .header-about {
-                width: 300px;
-                font-size: 50px ;
-                font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
-        
-                align-items: center;
-            }
-
-           
-            .page-header {
-             margin: 5px ;
-            padding: 20px 5px;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-right: 20%;
-        }
-
-        .header-img {
-            margin: 2px 49px;
-            height: 250px;
-            border-radius: 50px;
-            flex-basis: 20%;
-            animation: animate 3s linear infinite;
-            width:30%;
-            margin-left: 35%;
-            filter: drop-shadow(15px 7px 6px grey);
-
-        }
-        .paragraph{
-            font-size: 20px;
-            font-style: normal;
-            font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
-           
-        }
-
-        
-      
-    .content{
-  margin-top: 1vw;
-  width: 60%;
-}
-
-/*  cards start*/
-/*  cards start*/
-       .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            margin: 20px 0;
-            padding: 10px;
-
-        }
-
-        .team-member-card {
-            width: 200px;
-            border: 1px solid black;
-            text-align: center;
-            padding: 25px 20px;
-            margin: 10px 20px;
-            background-color: white;
-            border-radius: 50px;
-            position: relative;
-            box-shadow: 7px 7px 7px  grey;
-            height:280px;
-        }
-
-        .card-title {
-            font-size: 17px;
-            font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
-            color: rgb(255, 255, 255);
-
-            
-        }
-
-        .team-member-card:hover {
-            border: 2px solid #eee;
-            cursor: pointer;
-            text-align: center;
-            margin: 10px 20px;
-            transition: 0.5s;
-            overflow: hidden;
-        }
-         .card-img-1 {
-            width: 150px;
-            height: 150px;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 20px;
-            display: block;
-            justify-content: center;
-            border-radius: 20%;
-        }
-        
-        
-        .card-img{
-            width: 150px;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 20px;
-            display: block;
-            justify-content: center;
-            border-radius: 2px;
-            border-radius: 20%;
-        }
-
-        .name{
-            text-align: center;
-            color: rgb(0, 0, 0);
-            font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
-            font-size: 56px;
-
-        }
-        .card-container:hover {
-          box-shadow: 80px 8px 100px gray;
-          border-radius: 30px;
-       }
-       .team-member-card {
-        box-shadow: 3px 5px 7px white;
-        margin-top: 7px;
-         margin-left: -7.8px;
-       }
-        
-
-  
-
-@keyframes animate{
-            0%{
-                transform: scale(1.1);
-            }
-            50%{
-                transform: scale(1);
-            }
-            90%{
-                transform: scale(1.1);
-            }
-        }
-        @media only screen and (max-width:1200px) and (min-width:1001px){
-            .header-about {
-                width: 300px;
-                font-size: 50px ;
-                font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
-                color:white;
-                align-items: center;
-            }
-
-           
-            .page-header {
-             margin: 5px ;
-            padding: 20px 5px;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-right: 20%;
-        }
-
-        .header-img {
-            margin: 2px 49px;
-            height: 250px;
-            border-radius: 50px;
-            flex-basis: 20%;
-            animation: animate 3s linear infinite;
-            width:30%;
-            margin-left: 35%;
-            filter: drop-shadow(15px 7px 6px grey);
-
-        }
-        .paragraph{
-            font-size: 20px;
-            font-style: normal;
-            font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
-           
-        }
-
-        
-      
-  
- }
-
- </style>
 </head>
+
 <body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="../logo/dark theme.png" width="40px" alt="">
+
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">About</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="login-signup">
+                <a href="../pages/login.html"><i class="ri-user-fill"></i></a>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+
     <div class="page-header">
-        <img class="header-img" src="../img/main img.jpg" >
+        <img class="header-img" src="../img/main img.jpg">
 
         <div class="header-about">
-          <p>  About Us ....</p>
-            
+            <p> About Us ....</p>
+
             <div class="paragraph">
-              <p> Art is a diverse range of human activity, and its resulting product, 
-                that involves creative or imaginative talent generally expressive of technical proficiency, 
-                beauty, emotional power, or conceptual ideas.</p>
-                
+                <p> Art is a diverse range of human activity, and its resulting product,
+                    that involves creative or imaginative talent generally expressive of technical proficiency,
+                    beauty, emotional power, or conceptual ideas.</p>
+
             </div>
-           </div>
+        </div>
     </div>
     <!--first img end-->
-    <p><h1 class="name"><marquee direction="right"> Meet Our Team..</marquee></h1></p>
-   
-     <!--card section start-->
+    <p>
+    <h1 class="name">
+        <marquee direction="right"> Meet Our Team..</marquee>
+    </h1>
+    </p>
+
+    <!--card section start-->
 
     <div class="card-container">
+        <div class="team-member-card">
+            <img src="../img/me.png" class="card-img">
 
-      <div class="team-member-card">
-          <img src="../img/Akshada.jpeg" class="card-img-1">
-          <p class="card-title">Name : Akshada Anawade</p>
-          <p>ICP-6.0 </p>
-          
+            <p>Abhimanyu Sahani</p>
 
-      </div>
+            <div class="icon">
+                <i class="ri-instagram-line"> <a href=""></a></i>
+                <i class="ri-github-fill"><a href=""></a></i>
+
+            </div>
+        </div>
+
+        <div class="team-member-card">
+            <img src="../img/Akshada.jpeg" class="card-img-1">
+            <p>Akshada Anawade</p>
+
+            <div class="icon">
+                <i class="ri-instagram-line"> <a href=""></a></i>
+                <i class="ri-github-fill"><a href=""></a></i>
+
+            </div>
 
 
-
-      <div class="team-member-card">
-          <img src="../img/Rohini.jpeg" class="card-img-1">
-          <p class="card-title">Name : Rohini Kandekar</p>
-          <p>ICP-6.0</p>
-         
-      </div>
-
-
-
-      <div class="team-member-card">
-          <img src="../img/vikrant.png" class="card-img-1">
-          <p class="card-title">Name : Vikrant Patil</p>
-          <p>ICP-6.0</p>
-          
-      </div>
+        </div>
 
 
 
-      <div class="team-member-card">
-          <img src="../img/Leena.jpeg" class="card-img-1">
-          <p class="card-title">Name : Leena Yenkar</p>
-          <p>ICP-6.0</p>
-          
-      </div>
+        <div class="team-member-card">
+            <img src="../img/Rohini.jpeg" class="card-img-1">
+            <p>Rohini Kandekar</p>
+            <div class="icon">
+                <i class="ri-instagram-line"> <a href=""></a></i>
+                <i class="ri-github-fill"><a href=""></a></i>
+
+            </div>
+        </div>
 
 
 
-      <div class="team-member-card">
-          <img src="../img/Anjali.jpeg" class="card-img-1">
-          <p class="card-title">Name :Anjali Pise</p>
-          <p>ICP-6.0</p>
-          
-      </div>
+        <div class="team-member-card">
+            <img src="../img/vikrant.png" class="card-img-1">
+            <p>Vikrant Patil</p>
+            <div class="icon">
+                <i class="ri-instagram-line"> <a href=""></a></i>
+                <i class="ri-github-fill"><a href=""></a></i>
+
+            </div>
+            <div class="icon">
+                <i class="ri-instagram-line"> <a href=""></a></i>
+                <i class="ri-github-fill"><a href=""></a></i>
+
+            </div>
+        </div>
 
 
 
-      <div class="team-member-card">
-          <img src="../img/preeti.jpg" class="card-img-1">
-          <p class="card-title">Name :Preeti Chothe </p>
-          <p>ICP-6.0</p>
-          
-      </div>
+    
 
 
 
-      <div class="team-member-card">
-          <img src="../img/about/sha" class="card-img-1">
-          <p class="card-title">Name : </p>
-          <p>ICP-6.0</p>
-          
-              </div>
+        <div class="team-member-card">
+            <img src="../img/Anjali.jpeg" class="card-img-1">
+            <p>Anjali Pise</p>
+            <div class="icon">
+                <i class="ri-instagram-line"> <a href=""></a></i>
+                <i class="ri-github-fill"><a href=""></a></i>
+
+            </div>
+
+
+        </div>
 
 
 
-      <div class="team-member-card">
-          <img src="../img/about" class="card-img">
-          <p class="card-title">Name : </p>
-          <p>ICP-6.0</p>
+        <div class="team-member-card">
+            <img src="../img/preeti.jpg" class="card-img-1">
+            <p>Preeti Chothe </p>
+            <div class="icon">
+                <i class="ri-instagram-line"> <a href=""></a></i>
+                <i class="ri-github-fill"><a href=""></a></i>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="team-member-card">
+            <img src="../img/swati.jpg" class="card-img-1">
+            <p>swati nimje </p>
+            <div class="icon">
+                <i class="ri-instagram-line"> <a href=""></a></i>
+                <i class="ri-github-fill"><a href=""></a></i>
+
+            </div>
+            <div class="icon">
+                <i class="ri-instagram-line"> <a href=""></a></i>
+                <i class="ri-github-fill"><a href=""></a></i>
+
+            </div>
+        </div>
+
         
-      </div>
+        <div class="team-member-card">
+            <img src="../img/vishal.png" class="card-img">
+            <p>vishal </p>
+            <div class="icon">
+                <i class="ri-instagram-line"> <a href=""></a></i>
+                <i class="ri-github-fill"><a href=""></a></i>
+
+            </div>
+
+        </div>
 
 
 
-      <div class="team-member-card">
-          <img src="../img/about/anjali.jpeg" class="card-img">
-          <p class="card-title">Name : </p>
-          <p>ICP-6.0</p>
-          
-      </div>
-  </div>
-    
-  
-  
 
-          
+        <div class="badtmeej-log">
 
-          
-    
-    
+
+            <div class="team-member-card">
+                <img src="../img/Leena.jpeg" class="card-img">
+                <p> leena</p>
+                <div class="icon">
+                    <i class="ri-instagram-line"> <a href=""></a></i>
+                    <i class="ri-github-fill"><a href=""></a></i>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="footer">
+            <div class="social-media sections">
+                <h3> Photos shared by talented creators.</h3>
+                <p>Download our App</p>
+                <div class="download">
+                    <button type="button"> <img src="../logo/appstore.png" alt=""></button>
+                    <button type="button"><img src="../logo/playstore.png" alt=""></button>
+                </div>
+
+                <div class="handle">
+
+                    <a href="www.facebook.com"> <i class="ri-facebook-line"></i></a>
+                    <a href="www.instagram.com"> <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="www.youtube.com"> <i class="ri-youtube-line"></i></a>
+                    <a href="www.twitter.com"> <i class="ri-twitter-line"></i></a>
+                    <a href="www.pinterest.com"> <i class="ri-pinterest-line"></i></a>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-links sections">
+                <h3>Quick links</h3>
+
+                <a href="../index.html">Home</a>
+                <a href="../pages/gallery.html">Gallery</a>
+                <a href="../pages/contact.html">Contact</a>
+                <a href="../pages/about.html">About</a>
+<a href="../pages/feedback.html">Feedback</a>
+            </div>
+
+
+            <div class="stock-images sections">
+                <h3>Stock Images</h3>
+                <button type="button">Black and white photography</button>
+
+                <button type="button">Happy birthday images</button>
+                <button type="button">Love wallpaper</button>
+                <button type="button">Samsung wallpaper</button>
+                <button type="button">4K wallpaper</button>
+                <button type="button">iPhone wallpaper</button>
+                <button type="button">Lock screen wallpaper</button>
+                <button type="button">Cool wallpapers</button>
+                <button type="button">Best HD wallpapers</button>
+                <button type="button">Happy new year images</button>
+                <button type="button">Free business videos</button>
+                <button type="button">Galaxy wallpaper</button>
+
+
+            </div>
+
+
+
+        </div>
+        <h5 style="text-align: center;">Copyright 2023 @ Pixel Pallete Gallery</h5>
+
+
+
+
+
+
+
+        <script src="../js/navbar.js
+    "></script>
 </body>
+
 </html>

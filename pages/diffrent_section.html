@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel | Palette | Gallery</title>
+    <title>Diffrent-Sections</title>
+    <link rel="stylesheet" href="../css/navbar.css  ">
+<link rel="stylesheet" href="../css/footer.css">
+
+<!-- 
+    <link rel="stylesheet" href="../css/footer.css"> -->
 
   <style>
     @font-face {
     font-family: h;
-    src: url(/fonts/Laila\ Regular.ttf);
+    src: url(../fonts/Laila\ Regular.ttf);
     }
 
     @font-face {
     font-family: p;
-    src: url(/fonts/Hind\ Guntur\ Regular.ttf);
+    src: url(../fonts/Hind\ Guntur\ Regular.ttf);
     }
     
     html, body{
     width: 100%;
     height: 100%;
-    background-color: #9be0ee;
+    background-color: white;
    } 
 
    .main{
@@ -30,7 +35,7 @@
    }
 
    .card1{
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.763);
     height: 300px;
     width: 80%;
     display: flex;
@@ -41,11 +46,21 @@
     
    }
 
-   .card1-img-container {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
+   .card2{
+    
+    background-color: rgba(0, 0, 0, 0.763);
+    height: 300px;
+    width: 80%;
+    display: flex;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 100px;
 
+    
+   }
+   
+   
+   
    .card1-img{
     height: auto;
     width: 400px;
@@ -69,15 +84,16 @@
     padding: 20px;
     border-radius: 30px;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
-    background-color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.26);
+    font-family: h;
    }
     
   
 
    .button-1{
-    background:  linear-gradient( #9be0ee, #25bbbbd0);
+    background: linear-gradient( #fc7234, #e75f2b);
     display: inline-flex;
     padding: 14px 24px; 
     font-size: 18px; 
@@ -89,6 +105,7 @@
     border-radius: 50px;
     border: 1px solid #5cc5da;
     transition:  0.3s ease-in-out, color 0.3s ease-in-out;
+    font-family: p;
 
    }
 
@@ -101,16 +118,19 @@
 
   .button-1:hover{
     cursor: pointer;
-    background: linear-gradient(#25bbbbd0, #9be0ee);
-    color: #ffffff;
+    background: linear-gradient( #ff5a1f, #e75f2b);
+   
   }
+  
+
+ 
 
   /* Start of footer  */
 
 .footer{
     width: 100vw;
     height: 70vh;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     display: flex;
     justify-content: space-evenly;
     /* align-items: center; */
@@ -536,32 +556,29 @@ header .header-right .hamburger div {
 
 
       <div class="card1">
-        <div class="card1-img-container">
-         <img src="../img/card img1.jpg" class="card1-img">
-         
-        </div>
+              <img src="../images/diffrent section images/card1/painting.jpg" class="card1-img" onclick="showNextImage()">
           <div class="card1-text">
              <h2>Painting</h2> 
              <p>"Painting is a visual art form that involves applying pigments or color to a surface to create an image, design, or representation. It is one of the oldest and most fundamental forms of artistic expression, dating back to prehistoric times when early humans used natural materials like charcoal and pigments from plants to create cave paintings."</p>
-             <button type="button" class="button-1" onclick="exploreMore()">Explore More</button>
+            <a href="./paintings.html"> <button type="button" class="button-1" onclick="exploreMore()">Explore More</button></a>
           </div>
       </div>
          <br> <br>
-      <div class="card1">
-        <img src="../img/sculpture.jpg" class="card1-img">
+      <div class="card2">
+        <img src="../images/diffrent section images/card2/sculpture.jpg" class="card1-img">
          <div class="card1-text">
             <h2>Sculpture</h2> 
             <p>"Sculpture involves creating three-dimensional forms and shapes by carving, modeling, or assembling materials such as wood, stone, metal, or clay.Sculptors work to give physical, tangible form to their artistic ideas, often creating freestanding sculptures or pieces that are integrated into architectural spaces."</p>
-            <button type="button" class="button-1" onclick="exploreMore()">Explore More</button>
+           <a href="./sculpture2.html"> <button type="button" class="button-1" onclick="exploreMore()">Explore More</button></a>
          </div>
      </div>
        <br> <br>
      <div class="card1">
-      <img src="../img/morden-art.jpg" class="card1-img">
+      <img src="../images/diffrent section images/card3/morden-art.jpg" class="card1-img">
        <div class="card1-text">
-          <h2>Modren-Art</h2> 
+          <h2>Modern-Art</h2> 
           <p>"Modern art refers to the broad spectrum of artistic styles, movements, and practices that emerged during the late 19th and early to mid-20th centuries. This period marked a significant departure from the traditional art forms that had prevailed for centuries. Modern art reflects a radical shift in artistic thinking, embracing innovation, experimentation, and a break from established norms."</p>
-          <button type="button" class="button-1" onclick="exploreMore()">Explore More</button>
+         <a> <button type="button" class="button-1" onclick="exploreMore()">Explore More</button> </a>
        </div>
    </div>
 <br> <br>
@@ -621,10 +638,48 @@ header .header-right .hamburger div {
   </div>
   
   <script>
-    
-    function exploreMore() {
-        alert("You clicked the Explore More button!");
-    }
+   
+    // JavaScript for automatic image slider
+    function createImageSlider(cardClass, imagePaths) {
+            let currentImageIndex = 0;
+
+            function showNextImage() {
+                currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
+                updateImage();
+            }
+
+            function updateImage() {
+                const cardImg = document.querySelector(`.${cardClass}-img`);
+                
+
+                setTimeout(() => {
+                    cardImg.src = imagePaths[currentImageIndex];
+                    cardImg.style.transform = 'scale(1)'; 
+                }, 300); 
+            }
+
+            
+            setInterval(() => {
+                showNextImage();
+            }, 4000);
+        }
+
+        
+        createImageSlider('card1', [
+            '../images/diffrent section images/card1/painting-1.jpg', 
+           ' ../images/diffrent section images/card1/painting-2.jpg' ,
+           ' ../images/diffrent section images/card1/painting-3.jpg',
+           ' ../images/diffrent section images/card1/painting-4.jpg',
+           ' ../images/diffrent section images/card1/painting-5.jpg'
+            
+        ]);
+
+        function exploreMore(){
+            alert("You clicked on Explore More")
+        }
+
+
+      
 </script>
 
 
