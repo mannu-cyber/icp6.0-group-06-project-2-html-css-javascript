@@ -206,7 +206,7 @@ header .header-right .hamburger div {
     box-shadow:0 0 10px black;
     border-radius: 10px;
     padding: 0 20px;
-    background-color: rgb(205, 200, 200);
+    background-color:#bcc8cf;
 }
 .product-img{
     width: 100%;
@@ -236,9 +236,6 @@ header .header-right .hamburger div {
     text-align: center;
     font-family: h;
     margin: 5px;
-}
-.product-title:hover{
-    color:orangered;
 }
 .product-prize{
     font-size: 20px;
@@ -281,6 +278,101 @@ h1{
     text-align: center;
     color: rgb(234, 88, 35);
     margin-top: 100px;
+}
+
+
+  /* Start of footer  */
+
+.footer{
+    width: 100vw;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding-top: 5vw;
+}
+
+.social-media h3{
+    line-height: 1.2;
+}
+
+.social-media p{
+    font-size: 1.4vw;
+    margin: 1vw 0;
+}
+
+/* .social-media img{
+    width: 30px;
+    border: none;
+    margin: 0 20px;
+} */
+
+.footer .download{
+    display: flex;
+/* background-color: red; */
+width: 10vw;
+justify-content: center;
+gap: 2vw;
+border: none;
+}
+
+.download button{
+    border: none;
+}
+
+.handle{
+    margin: 1.4vw 0;
+
+}
+
+.footer .handle i{
+    font-size: 30px;
+    transition: .5s;
+}
+
+.footer .handle i:hover{
+    color: #FA4738;
+}
+
+.sections{
+    width: 20vw;
+}
+
+.footer h3{
+    font-size: 2vw;
+    font-weight: 500;
+    font-family: p;
+}
+
+.quick-links{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+
+}
+
+.quick-links a:hover{
+    color: #f70000;
+
+}
+
+.footer .stock-images{
+    width: 30vw;
+    /* background-color: red; */
+}
+
+.footer .stock-images button{
+    padding: var(--btn-padding);
+    margin: 1px;
+    cursor: pointer;
+    font-family: p;
+    font-weight: 900;
+    transition: .4s;
+}
+
+.footer .stock-images button:hover{
+    color: #FA4738;
 }
 
     </style>
@@ -341,7 +433,7 @@ h1{
         <p class="product-prize">Prize:₹850</p>
         <div class="quantity-container">
             <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
-            <span class="product-quantity" id="quantity-text1">1</span>
+            <span class="product-quantity" id="quantity-text">1</span>
             <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
         </div>
         <button type="button" class="btn">Buy Now</button>
@@ -429,6 +521,9 @@ h1{
         <button type="button" class="btn">Buy Now</button>
     </div>
 </div>
+
+
+
 <div class="footer">
 
     <div class="social-media sections">
@@ -487,11 +582,12 @@ h1{
    
      </div>
     <script>
+    
         const quantityElement=document.getElementById("quantity-text")
         function increasequantity(){
             let quantity=parseInt(quantityElement.innerText);
             if(quantity<10){
-                quantityElement1.innerText=++quantity;
+                quantityElement.innerText=++quantity;
             }else{
                 alert("you can't add more than 10 items")
             }
@@ -499,12 +595,13 @@ h1{
         function decreasequantity(){
             let quantity=parseInt(quantityElement.innerText);
             if(quantity>1){
-                quantityElement1.innerText=--quantity;
+                quantityElement.innerText=--quantity;
             }else{
                 alert(" you can't add less than 1 items")
         }
-        
     }
+    
+    
     
     hamburger = document.querySelector(".hamburger");
     nav = document.querySelector("nav");
