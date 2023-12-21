@@ -1,0 +1,262 @@
+@font-face {
+    font-family: h;
+     src: url(../fonts/Laila\ Regular.ttf);
+   }
+
+   @font-face {
+  font-family: p;
+  src: url(../fonts/Hind\ Guntur\ Regular.ttf);
+   }
+
+   .main{
+    overflow-x: hidden;
+   }
+
+
+      body{
+          text-decoration: none;
+          background-color:rgb(255, 255, 255);
+          color: #000;
+      }
+      @media only screen and (max-width:7000px) and (min-width:701px){
+          .header-about {
+              width: 300px;
+              font-size: 50px ;
+              font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+      
+              align-items: center;
+          }
+
+         
+          .page-header {
+
+           margin: 5px ;
+           margin-top: 5vw;
+          padding: 20px 5px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-right: 20%;
+      }
+
+      .header-img {
+          margin: 2px 49px;
+          height: 250px;
+          border-radius: 50px;
+          flex-basis: 20%;
+          animation: animate 3s linear infinite;
+          width:30%;
+          margin-left: 35%;
+          filter: drop-shadow(15px 7px 6px grey);
+
+      }
+    }
+    
+      .paragraph{
+          font-size: 20px;
+          font-style: normal;
+          font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+        }
+         
+
+      
+    
+  .content{
+margin-top: 1vw;
+width: 60%;
+}
+
+/*  cards start*/
+/*  cards start*/
+     .card-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 20px 0;
+          padding: 10px;
+overflow: hidden;
+      }
+
+
+.team-member-card p{
+    text-transform: capitalize;
+font-size: 18px;
+margin-top: 10px;
+}
+
+
+
+      .team-member-card {
+          width: 330px;
+          height:400px;
+          border: 1px solid black;
+          text-align: center;
+       position: relative;
+          margin: 10px 20px;
+          background-color: white;
+          border-radius: 50px;
+          position: relative;
+          box-shadow: 7px 7px 7px  grey;
+          overflow: hidden;
+          transition: linear .5s;
+
+          padding: 20px;
+      }
+
+      .card-title {
+          font-size: 17px;
+          font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+          color: rgb(255, 255, 255);
+
+          
+      }
+
+      .team-member-card:hover {
+          border: 2px solid #eee;
+          cursor: pointer;
+          text-align: center;
+          overflow: hidden;
+          box-shadow: 0 0 20px gray;
+        }
+
+      
+
+        .card-container  .icon{
+     
+            position: absolute;
+            bottom: 20px;
+      
+            left: 0;
+            opacity:0 ;
+            display: block;
+            transition:  linear .5s;
+            width: 100%;
+        }
+
+        .team-member-card:hover  .icon{
+            display: block;
+            opacity: 1;
+        }
+
+        .card-container .icon i{
+            font-size: 30px;
+            margin: 0 auto;
+  
+        }
+
+
+        .badtmeej-log {
+display: flex;
+
+
+        }
+            
+      
+  
+       /* .card-img-1 {
+
+    
+
+          display: block;
+          justify-content: center;
+          border-radius: 20%;
+      }
+       */
+
+
+       .team-member-card img{
+    
+        margin: 1vw;
+        border-radius: 20px;
+        object-fit: cover;
+        object-position: center;
+display: block;
+margin: 0 auto;
+        width: 280px;
+        height: 280px;
+       }
+      
+      .card-img{
+          width: 150px;
+          margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 20px;
+          display: block;
+          justify-content: center;
+          border-radius: 2px;
+          border-radius: 20%;
+      }
+
+      .name{
+          text-align: center;
+          color: rgb(0, 0, 0);
+          font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+          font-size: 56px;
+        }
+
+      .card-container:hover {
+        box-shadow: 80px 8px 100px gray;
+        border-radius: 30px;
+     }
+     .team-member-card {
+      box-shadow: 3px 5px 7px white;
+      margin-top: 7px;
+       margin-left: -7.8px;
+     }
+      
+
+
+
+@keyframes animate{
+          0%{
+              transform: scale(1.1);
+          }
+          50%{
+              transform: scale(1);
+          }
+          90%{
+              transform: scale(1.1);
+          }
+      }
+      @media only screen and (max-width:1200px) and (min-width:1001px){
+          .header-about {
+              width: 300px;
+              font-size: 50px ;
+              font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+              color:white;
+              align-items: center;
+          }
+
+         
+          .page-header {
+           margin: 5px ;
+          padding: 20px 5px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-right: 20%;
+      }
+
+      .header-img {
+          margin: 2px 49px;
+          height: 250px;
+          border-radius: 50px;
+          flex-basis: 20%;
+          animation: animate 3s linear infinite;
+          width:30%;
+          margin-left: 35%;
+          filter: drop-shadow(15px 7px 6px grey);
+
+      }
+      .paragraph{
+          font-size: 20px;
+          font-style: normal;
+          font-family:"(../fonts/Hind\ Guntur\ Regular.ttf)";
+         
+      }
+
+      
+    
+
+}

@@ -1,20 +1,39 @@
+@font-face {
+    font-family: h;
+    src: url(../fonts/Laila\ Regular.ttf);
+}
+
+@font-face {
+    font-family: p;
+    src: url(../fonts/Hind\ Guntur\ Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    padding: 10px 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 7vw;
 }
 
 .formdesign {
-    font-size: 10px;
+    font-size: 7px;
 }
 
 .formdesign input {
-    width: 70%;
-    padding: 3px;
-    border: 1px solid blue;
-    margin:2px;
-    border-radius: 4px;
-    font-size: 7px;
-    margin-top: 5px;
-    margin-left: 15px;
+    width: 90%;
+    padding: 8px 30px;
+    border: none;
+    margin: 1vw auto;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    display: block;
+    font-family: h;
 
 }
 
@@ -23,36 +42,54 @@ body {
 }
 
 .but {
-    border-radius: 9px;
-    width: 50px;
-    height: 20px;
-    font-size: 10px;
-    margin-top: 5px;
-    margin-left: 50px;
-    background-color: rgb(160, 160, 246);
+    padding: 4px 30px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2vw;
+    font-family: p;
+    font-weight: 700;
     cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
 }
 
 
 .container {
-    background-color: rgb(246, 199, 183);
-    padding: 5px;
-    padding-left: 9px;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: rgb(202, 223, 242);
+    padding: 1vw;
+    padding-top: 1vw;
+    width: 400px;
+margin: 0 auto;
     border-radius: 10px;
-    box-shadow: 0 5px 5px #999;
-    height: 180px;
+    box-shadow: 0 0 15px #999;
+    height: 500px;
 }
 
 .heading {
+    margin-bottom: 2vw;
     text-align: center;
-    font-size: 15px;
-    
+    font-size: 30px;
+    font-family: h;
 }
-.input-box{
-    height: 7px;
-    font-size: 5px;
-    width: 120px;
+
+.input-box {
+    height: 50px;
+    width: 900px;
+    font-size: 7px;
+    border-radius: 1px;
+    margin-left: 15px;
+    margin-top: 5px;
+
+}
+
+form :nth-child(5) {
+    margin-top: 3vw;
+}
+
+form a {
+    display: block;
+margin: 0 auto;
+text-align: center;
+margin-top: .9vw;
 }

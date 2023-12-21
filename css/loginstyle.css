@@ -1,4 +1,4 @@
- @font-face {
+@font-face {
     font-family: h;
     src: url(../fonts/Laila\ Regular.ttf);
  }
@@ -13,33 +13,32 @@
     padding: 0;
     box-sizing: border-box;
  }
- 
-html, body{
-    width: 100%;
+
+ html,body{
+    width:100%;
 height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
  .box{
-    width:290px;
+    width:330px;
     height: 430px;
-    background-color: pink;
-  margin: 4vw auto;
+    background-color:rgb(202, 223, 242);
+     margin: 4vw auto;
     border-radius: 10px;
-    box-shadow: 0 5px 5px #999;
-
+    box-shadow: 0 5px 5px 0;
     padding: 1vw;
-    padding-top: 1vw;
-
-
+ 
 
 }
+
 h1{
     text-align: center;
     font-family: h;
- 
+
 }
-
-
 
 .text{
     height: 10px;
@@ -48,8 +47,8 @@ h1{
     width: 100px;
     margin-left: 15px;
     margin-top: 5px;
+    font-family: h;
 }
-
 
 
 
@@ -58,25 +57,38 @@ form .name{
     padding: 8px 30px;
     border-radius: 5px;
     border: none;
-    display: block  ;
-    width: 100%;
-    margin: 1vw auto;
+    display: block;
+    width:100%;
+    margin:1vw auto;
 font-family: h;
 }
 
 form :nth-child(2){
-
+    
     margin-top: 3vw;
 }
 
 
 
+
 form button{
-    padding: 4px 30px;
+    padding:4px 30px;
     display: block;
-    margin: 0 auto;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     font-family: p;
     font-weight: 700;
-cursor: pointer;
+    cursor: pointer;
+    margin: 0vw auto;
+    background-color: black;
+    color: aliceblue;
+    border-radius:5px ;
+}
+
+
+form .sign{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2vw;
+    text-decoration: none;
 }
