@@ -1,317 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sculpture Art</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <style>
-        @font-face {
-    font-family: h;
-    src: url(../fonts/Laila\ Regular.ttf);
-}
-
-@font-face {
-    font-family: p;
-    src: url(../fonts/Hind\ Guntur\ Regular.ttf);
-}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
- 
-}
+    <link rel="stylesheet" href="../css/sculpture.css">
 
 
-.main{
-    overflow:hidden ;
-}
-
-img {
-    width: 100%;
-}
-
-
- header {
-    position: fixed;
-    z-index:120;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-    background: #000000;
-
-}
-header .header-left {
-    display: flex;
-    align-items: center;
-
-}
-header .header-left .logo {
-    width: 140px;
-}
-header .header-left nav {
-    margin-left: 50px;
-}
-header .header-left nav ul {
-    display: flex;
-}
-nav ul li a {
-    display: block;
-    color: #cfd9e0;
-    font-size: 18px;
-    padding: 1px 10px;
-    transition: 0.2s;
-}
-
-nav ul{
-    margin-left: 18vw;
-}
-
-
-nav a {
-    font-size: 17px;
-    background: transparent;
-    border: none;
-    padding: 1px 4px;
-    color: #ffffff;
-    text-transform: uppercase;
-    position: relative;
-    transition: .5s ease;
-    font-family: h;
-}
-
-nav a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0px;
-    background-color: #FA4738;
-    transition: .5s ease;
-}
-
-
-
-nav a:hover {
-    color: #f70000;
-
-}
-
-nav a:hover::before {
-    width: 100%;
-}
-
-
-
-
-nav ul li a:hover {
-    color:  #f70000;
-}
-nav .login-signup {
-    display: none;
-}
-
-header .header-right{
-    display:none;
-}
-
-header .header-right {
-    display: flex;
-    align-items: center;
-}
-header .login-signup {
-    color: #cfd9e0;
-    font-weight: bold;
-}
-header .login-signup a {
-    display: inline-block;
-    color: #0b2239;
-    background: #ffffff;
-    padding: 5px 12px;
-    border-radius: 5px;
-    transition: .5s;
-}
-
-.login-signup a:hover{
-    background-color: #f70000;
-    scale: 1.1;
-}
-
-header .header-right .hamburger {
-    margin-left: 20px;
-    cursor: pointer;
-    display: none;
-}
-header .header-right .hamburger div {
-    width: 30px;
-    height: 2px;
-    margin: 6px 0;
-    background: #fff;
-}
-@media only screen and (max-width: 1000px) {
-    header {
-        padding: 0 20px;
-    }
-    header .header-right .hamburger {
-        display: block;
-    }
-    header .header-left nav {
-        margin: 0;
-        position: absolute;
-        top: -300%;
-        left: 0;
-        width: 100%;
-        height: fit-content;
-        background-color: #000000;
-        padding: 30px;
-        transition: 0.3s;
-        text-align: center;
-        z-index: -1;
-    }
-
-    nav ul{
-        margin-left:0 ;
-    }
-    header .header-left nav.active {
-        top: 70px;
-    }
-    header .header-left nav ul {
-        display: block;
-    }
-}
-@media only screen and (max-width: 500px) {
-    nav .login-signup {
-        display: block;
-        margin-top: 20px;
-    }
-    header .header-right .login-signup {
-        display: none;
-    }
-    nav ul{
-        margin-left:0 ;
-    }
-}
-
-.card{
-    position: relative;
-    display:flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-}
-
-.heading{
-    font-size: 2.5vw;
-}
-
-
-.heading::before{
-    content: "";
-    position: absolute;
-    top: 200px;
-    width: 24vw;
-    height: 2vw;
-}
-
-        .product-card{
-    width: 300px;
-    border: 1px solid gray;
-    display: block;
-    margin: 20px auto;
-    box-shadow:0 0 10px black;
-    border-radius: 10px;
-    padding: 0 20px;
-    background-color: rgb(205, 200, 200);
-    overflow: hidden;
-}
-.product-img2{
-    width: 100%;
-    height: 150px;
-    display: block;
-    margin:  auto;
-    text-align: center;
-    padding: 10px;
-    transition: linear .5s;
-}
-
-
-.product-img:hover{
-  scale: .95;
-}
-.product-img2{
-    width: 100%;
-    height: 150px;
-    margin: 10 auto;
-    margin-top: 10px;
-    display: block;
-}
-.product-img2:hover{
-    height: 155px;
-    width: 102%;
-}
-.product-title{
-    font-size: 30px;
-    text-align: center;
-    font-family: h;
-    margin: 5px;
-}
-.product-title:hover{
-    color:orangered;
-}
-.product-prize{
-    font-size: 20px;
-    font-weight: bold;
-    font-family: p;
-    margin: 5px;
-}
-.btn{
-    display: block;
-    margin: 20px auto;
-    font-size: 20px;
-    padding: 10px 50px;
-    background-color: rgb(222, 89, 41);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.btn:hover{
-            background-color: #565656;
-            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-        }
-.quantity-container{
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-}
-.btn-quantity{
-    width: 30px;
-    cursor: pointer;
-}
-.btn-quantity:hover{
-    width:32px;
-}
-.product-quantity{
-    font-size: 25px;
-}
-h1{
-    font-family: h;
-    text-align: center;
-    color: rgb(234, 88, 35);
-    margin-top: 100px;
-}
-
-    </style>
 </head>
 <div class="main">
     <header>
@@ -369,7 +66,7 @@ h1{
         <p class="product-prize">Prize:₹850</p>
         <div class="quantity-container">
             <img src="./../images/minus.png" class="btn-quantity" onclick="decreasequantity()"/>
-            <span class="product-quantity" id="quantity-text1">1</span>
+            <span class="product-quantity" id="quantity-text">1</span>
             <img src="./../images/plus.png" class="btn-quantity" onclick="increasequantity()"/>
         </div>
         <button type="button" class="btn">Buy Now</button>
@@ -457,6 +154,9 @@ h1{
         <button type="button" class="btn">Buy Now</button>
     </div>
 </div>
+
+
+
 <div class="footer">
 
     <div class="social-media sections">
@@ -520,26 +220,20 @@ h1{
         let quantity=parseInt(quantityElement.innerText);
         function increasequantity(){
             if(quantity<10){
-                quantityElement.innerText=++quantity;
-            }else{
-                alert("you can't add more than 10 items")
-            }
+            quantityElement.innerText=++quantity;
+           }else{
+            alert("you can't add more than 10 items")
         }
-        function decreasequantity(){
-
-            if(quantity>1){
-                quantityElement.innerText=--quantity;
-            }else{
-                alert(" you can't add less than 1 items")
-        }
-        
     }
-    
-    hamburger = document.querySelector(".hamburger");
-    nav = document.querySelector("nav");
-    hamburger.onclick = function(){
-    nav.classList.toggle("active");
+function decreasequantity(){
+
+    if(quantity>1){
+        quantityElement.innerText=--quantity;
+    }else{
+        alert(" you can't add less than 1 items")
+}
 }
     </script>
+    <script src="./js/navbar.js"></script>
 </body>
 </html>

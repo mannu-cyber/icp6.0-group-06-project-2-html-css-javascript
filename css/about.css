@@ -8,6 +8,11 @@
   src: url(../fonts/Hind\ Guntur\ Regular.ttf);
    }
 
+   .main{
+    overflow-x: hidden;
+   }
+
+
       body{
           text-decoration: none;
           background-color:rgb(255, 255, 255);

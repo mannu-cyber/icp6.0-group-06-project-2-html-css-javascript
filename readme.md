@@ -33,10 +33,11 @@ Pixel Palette Gallery is a curated gallery of high-resolution images, carefully 
 
 ![Screenshot 2023-12-21 102244](https://github.com/mannu-cyber/icp6.0-group-06-project-2-html-css-javascript/assets/65304477/82a8b424-6f94-4920-9bb5-b213b2e9555f)
 
+![Screenshot 2023-12-21 102448](https://github.com/mannu-cyber/icp6.0-group-06-project-2-html-css-javascript/assets/65304477/66996a27-8c4c-4fdb-93c8-3f371d7d6636)
 
 
 
-![Uploading Screenshot 2023-12-21 102448.png…]()
+
 
 ## How to Use
 
