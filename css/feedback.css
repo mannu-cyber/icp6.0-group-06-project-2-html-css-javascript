@@ -28,7 +28,7 @@ body{
 }
 .container{
     width: 360px;
-    height: 520px;
+    height: 560px;
     background: #000;
     box-shadow: 0 0 8px rgba(250,250,250.0.6);
     opacity: 0.6;
