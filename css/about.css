@@ -18,7 +18,7 @@
           background-color:rgb(255, 255, 255);
           color: #000;
       }
-      
+      @media only screen and (max-width:7000px) and (min-width:701px){
           .header-about {
               width: 300px;
               font-size: 50px ;
@@ -50,6 +50,8 @@
           filter: drop-shadow(15px 7px 6px grey);
 
       }
+    }
+    
       .paragraph{
           font-size: 20px;
           font-style: normal;
