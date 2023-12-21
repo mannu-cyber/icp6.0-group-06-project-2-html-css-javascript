@@ -75,23 +75,24 @@ const sufflElement = document.getElementById("suffleImg")
 
 function suffle(){
   const min = 1;
-  const max = 4;
+  const max = 10;
 
 const randomNum = Math.floor(Math.random() * (max - min )) +min;
-switch (randomNum){
-  case 1:sufflElement.src= "../logo/apple.png"
-  console.log("first number");
-  break;
 
-  case2: sufflElement.src = "../logo/bmw.png"
-  console.log("second number")
-  break;
+if(randomNum >= 1 && randomNum <5 ){
+  sufflElement.src ="../logo/three.png"
+  console.log("hello1");
+}
 
+else if(randomNum >= 5 && randomNum< 8)
+{
+  sufflElement.src ="../logo/six.png"
+  console.log("hello2")
+} 
 
-  case 3:sufflElement.src = "../logo/adobe.png"
-  console.log("third number")
-  break;
-  
+else if(randomNum >= 8 && randomNum <= 10){
+  sufflElement.src ="../logo/one.png"
+console.log("hello 3")
 }
 
 }
