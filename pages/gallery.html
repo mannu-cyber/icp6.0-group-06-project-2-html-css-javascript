@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="shortcut icon" href="../logo/ppg-favicon-color.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/gallery.css">
-
+    <link rel="stylesheet" href="../css/footer.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
-
+    
 </head>
 
 <body>
     <div class="main">
-
+        
         <header>
             <div class="header-left">
                 <div class="logo">
                     <img src="../logo/dark theme.png" width="40px" alt="">
-
+                    
                 </div>
                 <nav>
                     <ul>
@@ -52,61 +53,349 @@
                 </div>
             </div>
         </header>
-
-
+        
+        
         <div class="page">
             <h1 class="heading">The Image Gallery</h1>
-
+            
             <div class="gallery">
 
            
-
-                    <div class="img-container">
-                        <img src="https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg" alt="Image"
-                            onclick="openImg('https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg')">
-                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
-                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
-                    </div>
-
-                    <div class="img-container">
-                        <img src="https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg" alt="Image"
-                            onclick="openImg('https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg')">
-                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
-                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
-                    </div>
-
-                    <div class="img-container">
-                        <img src="https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg" alt="Image"
-                            onclick="openImg('https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg')">
-                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
-                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
-                    </div>
-
-                    <div class="img-container">
-                        <img src="https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg" alt="Image"
-                            onclick="openImg('https://cdn.pixabay.com/photo/2023/12/14/07/53/cat-8448354_1280.jpg')">
-                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
-                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
-                    </div>
-
-
-
+                
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8amFpJTIwc2hyZWUlMjByYW18ZW58MHx8MHx8fDA%3D" alt="Image"
+                    onclick="openImg('https://images.unsplash.com/photo-1583089892943-e02e5b017b6a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8amFpJTIwc2hyZWUlMjByYW18ZW58MHx8MHx8fDA%3D')">
+                    <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                    <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
                 </div>
+                
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/9065959/pexels-photo-9065959.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image"
+                    onclick="openImg('https://images.pexels.com/photos/9065959/pexels-photo-9065959.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')">
+                    <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                    <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                </div>
+                
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/19433118/pexels-photo-19433118/free-photo-of-two-children-playing-in-front-of-a-house.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image"
+                    onclick="openImg('https://images.pexels.com/photos/19433118/pexels-photo-19433118/free-photo-of-two-children-playing-in-front-of-a-house.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')">
+                    <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                    <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                </div>
+                
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/17710968/pexels-photo-17710968/free-photo-of-asian-temple-in-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image"
+                        onclick="openImg('https://images.pexels.com/photos/17710968/pexels-photo-17710968/free-photo-of-asian-temple-in-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
 
+
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/18959488/pexels-photo-18959488/free-photo-of-close-up-of-woman-shoes-and-white-dress-on-grass.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load alt="Image"
+                        onclick="openImg('https://images.pexels.com/photos/18959488/pexels-photo-18959488/free-photo-of-close-up-of-woman-shoes-and-white-dress-on-grass.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/18156061/pexels-photo-18156061/free-photo-of-wedding-couple-walking-on-a-square-in-paris.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image"
+                        onclick="openImg('https://images.pexels.com/photos/18156061/pexels-photo-18156061/free-photo-of-wedding-couple-walking-on-a-square-in-paris.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/6006351/pexels-photo-6006351.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image"
+                            onclick="openImg('https://images.pexels.com/photos/6006351/pexels-photo-6006351.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')">
+                            <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/4687882/pexels-photo-4687882.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image"
+                        onclick="openImg('https://images.pexels.com/photos/4687882/pexels-photo-4687882.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/18586623/pexels-photo-18586623/free-photo-of-coffee-with-cookies-by-notebook.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image"
+                        onclick="openImg('https://images.pexels.com/photos/18586623/pexels-photo-18586623/free-photo-of-coffee-with-cookies-by-notebook.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/15096715/pexels-photo-15096715/free-photo-of-adorable-pomeranian-dog.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image"
+                            onclick="openImg('https://images.pexels.com/photos/15096715/pexels-photo-15096715/free-photo-of-adorable-pomeranian-dog.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/19011374/pexels-photo-19011374/free-photo-of-building-in-a-mountain-valley-covered-with-snow.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image"
+                        onclick="openImg('https://images.pexels.com/photos/19011374/pexels-photo-19011374/free-photo-of-building-in-a-mountain-valley-covered-with-snow.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://plus.unsplash.com/premium_photo-1698007654531-00cfeaa9872f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDd8fHxlbnwwfHx8fHw%3D" alt="Image"
+                        onclick="openImg('https://plus.unsplash.com/premium_photo-1698007654531-00cfeaa9872f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDd8fHxlbnwwfHx8fHw%3D')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/16756656/pexels-photo-16756656/free-photo-of-black-and-white-photo-of-a-swan-on-a-lake.jpeg" alt="Image"
+                        onclick="openImg('https://images.pexels.com/photos/16756656/pexels-photo-16756656/free-photo-of-black-and-white-photo-of-a-swan-on-a-lake.jpeg')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.pexels.com/photos/19404699/pexels-photo-19404699/free-photo-of-a-couple-sitting-on-a-meadow-and-hugging.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image"
+                        onclick="openImg('https://images.pexels.com/photos/19404699/pexels-photo-19404699/free-photo-of-a-couple-sitting-on-a-meadow-and-hugging.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://plus.unsplash.com/premium_photo-1681400156787-e4afe6e6949a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwYXJ0fGVufDB8fDB8fHww" alt="Image"
+                        onclick="openImg('https://plus.unsplash.com/premium_photo-1681400156787-e4afe6e6949a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwYXJ0fGVufDB8fDB8fHww')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1702611120121-e03dafc14150?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D" alt="Image"
+                        onclick="openImg('https://images.unsplash.com/photo-1702611120121-e03dafc14150?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1702404275992-929c62049bfe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTQ4fHx8ZW58MHx8fHx8" alt="Image"
+                        onclick="openImg('https://images.unsplash.com/photo-1702404275992-929c62049bfe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTQ4fHx8ZW58MHx8fHx8')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1702318429376-968e7a347064?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDZ8fHxlbnwwfHx8fHw%3D" alt="Image"
+                        onclick="openImg('https://images.unsplash.com/photo-1702318429376-968e7a347064?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDZ8fHxlbnwwfHx8fHw%3D')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+
+                    
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1702517207949-a02e0cbc695d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTA2fHx8ZW58MHx8fHx8" alt="Image"
+                        onclick="openImg('https://images.unsplash.com/photo-1702517207949-a02e0cbc695d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTA2fHx8ZW58MHx8fHx8')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1702136999448-a9337bb19cbd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nzd8fHxlbnwwfHx8fHw%3D" alt="Image"
+                        onclick="openImg('https://images.unsplash.com/photo-1702136999448-a9337bb19cbd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nzd8fHxlbnwwfHx8fHw%3D')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1562346549-0547568f31f8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fHw%3D" alt="Image"
+                        onclick="openImg('https://images.unsplash.com/photo-1562346549-0547568f31f8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fHw%3D')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1702553900791-46ed0202a01d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTA3fHx8ZW58MHx8fHx8" alt="Image"
+                        onclick="openImg('https://images.unsplash.com/photo-1702553900791-46ed0202a01d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTA3fHx8ZW58MHx8fHx8')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+
+                    
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1682685797886-79020b7462a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTA5fHx8ZW58MHx8fHx8" alt="Image"
+                        onclick="openImg('https://images.unsplash.com/photo-1682685797886-79020b7462a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTA5fHx8ZW58MHx8fHx8')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1702501725292-9bcf57e4d8c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTE3fHx8ZW58MHx8fHx8" alt="Image"
+                        onclick="openImg('https://images.unsplash.com/photo-1702501725292-9bcf57e4d8c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTE3fHx8ZW58MHx8fHx8')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1702353180825-138fbbf17c96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTQ3fHx8ZW58MHx8fHx8" alt="Image"
+                        onclick="openImg('https://images.unsplash.com/photo-1702353180825-138fbbf17c96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTQ3fHx8ZW58MHx8fHx8')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+
+                    
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1682687220945-922198770e60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTQ0fHx8ZW58MHx8fHx8" alt="Image"
+                            onclick="openImg('https://images.unsplash.com/photo-1682687220945-922198770e60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTQ0fHx8ZW58MHx8fHx8')">
+                            <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                            <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                        </div>
+                        
+                        
+                        <div class="img-container">
+                            <img src="https://plus.unsplash.com/premium_photo-1699114250062-2e12d485b787?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTU0fHx8ZW58MHx8fHx8" alt="Image"
+                            onclick="openImg('https://plus.unsplash.com/premium_photo-1699114250062-2e12d485b787?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTU0fHx8ZW58MHx8fHx8')">
+                            <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                            <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                        </div>
+                        
+                        
+                        
+                        <div class="img-container">
+                            <img src="https://images.unsplash.com/photo-1702145754106-05d909f08c9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTU3fHx8ZW58MHx8fHx8" alt="Image"
+                            onclick="openImg('https://images.unsplash.com/photo-1702145754106-05d909f08c9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTU3fHx8ZW58MHx8fHx8')">
+                            <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                            <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                        </div>
+                        
+
+
+                        
+                    <div class="img-container">
+                        <img src="https://plus.unsplash.com/premium_photo-1684175656154-ac52b3cc2c60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTU5fHx8ZW58MHx8fHx8" alt="Image"
+                        onclick="openImg('https://plus.unsplash.com/premium_photo-1684175656154-ac52b3cc2c60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTU5fHx8ZW58MHx8fHx8')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    <div class="img-container">
+                        <img src="https://plus.unsplash.com/premium_photo-1675597044878-86092b84f7b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFtfGVufDB8fDB8fHww" alt="Image"
+                        onclick="openImg('https://plus.unsplash.com/premium_photo-1675597044878-86092b84f7b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFtfGVufDB8fDB8fHww')">
+                        <img class="hert" onclick="clrChang(this)" src="../logo/heart.png" alt="">
+                        <img class="save" onclick="saved(this)" src="../logo/bookmark-white.png" alt="">
+                    </div>
+                    
+                    
+                    
+                </div>
+                
                 <div id="myModal" class="modal" onclick="closeModal()">
                     <span class="close">&times;</span>
                     <img id="modalImage" src="" alt="Modal Image">
                 </div>
-
-              
-
-
-
-
-
+                
             </div>
+            
+            
+            
+            
+            
+            
+            <div class="footer">
+                <div class="social-media sections">
+                    <h3> Photos shared by talented creators.</h3>
+                    <p>Download our App</p>
+                    <div class="download">
+                        <button type="button"> <img src="../logo/appstore.png" alt=""></button>
+                        <button type="button"><img src="../logo/playstore.png" alt=""></button>
+                    </div>
+                    
+                    <div class="handle">
+                        
+                        <a href="www.facebook.com">   <i class="ri-facebook-line"></i></a>
+                        <a href="www.instagram.com">    <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="www.youtube.com">  <i class="ri-youtube-line"></i></a>
+                        <a href="www.twitter.com"> <i class="ri-twitter-line"></i></a>
+                        <a href="www.pinterest.com"> <i class="ri-pinterest-line"></i></a>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="quick-links sections">
+                    <h3>Quick links</h3>
+                    
+                    <a href="../index.html">Home</a>
+                <a href="../pages/gallery.html">Gallery</a>
+                <a href="../pages/contact.html">Contact</a>
+                <a href="../pages/about.html">About</a>
+                
+                </div>
+                
+                
+                <div class="stock-images sections">
+                    <h3>Stock Images</h3>
+                    <button type="button">Black and white photography</button>
+                    
+                    <button type="button">Happy birthday images</button>
+                    <button type="button">Love wallpaper</button>
+                    <button type="button">Samsung wallpaper</button>
+                    <button type="button">4K wallpaper</button>
+                    <button type="button">iPhone wallpaper</button>
+                    <button type="button">Lock screen wallpaper</button>
+                    <button type="button">Cool wallpapers</button>
+                    <button type="button">Best HD wallpapers</button>
+                    <button type="button">Happy new year images</button>
+                    <button type="button">Free business videos</button>
+                    <button type="button">Galaxy wallpaper</button>
+                    
+                    
+                </div>
+                
+                
+                
+            </div>
+            <h5 style="text-align: center;">Copyright 2023 @ Pixel Pallete Gallery</h5>
+            
+            
+            
+            
+            
         </div>
-    </div>
+        
+       
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/gallery.js"></script>
 </body>

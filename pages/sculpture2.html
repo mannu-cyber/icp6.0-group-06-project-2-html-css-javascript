@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sculpture Art</title>
+    <link rel="stylesheet" href="../css/footer.css">
     <style>
         @font-face {
     font-family: h;
@@ -488,18 +489,18 @@ h1{
      </div>
     <script>
         const quantityElement=document.getElementById("quantity-text")
+        let quantity=parseInt(quantityElement.innerText);
         function increasequantity(){
-            let quantity=parseInt(quantityElement.innerText);
             if(quantity<10){
-                quantityElement1.innerText=++quantity;
+                quantityElement.innerText=++quantity;
             }else{
                 alert("you can't add more than 10 items")
             }
         }
         function decreasequantity(){
-            let quantity=parseInt(quantityElement.innerText);
+
             if(quantity>1){
-                quantityElement1.innerText=--quantity;
+                quantityElement.innerText=--quantity;
             }else{
                 alert(" you can't add less than 1 items")
         }
