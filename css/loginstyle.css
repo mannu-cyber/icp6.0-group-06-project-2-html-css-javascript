@@ -17,6 +17,9 @@
  html,body{
     width:100%;
 height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
  .box{
@@ -60,7 +63,7 @@ form .name{
 font-family: h;
 }
 
-form :nth-child(5){
+form :nth-child(2){
     
     margin-top: 3vw;
 }
@@ -79,4 +82,13 @@ form button{
     background-color: black;
     color: aliceblue;
     border-radius:5px ;
+}
+
+
+form .sign{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2vw;
+    text-decoration: none;
 }
