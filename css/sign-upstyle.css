@@ -86,3 +86,10 @@ margin: 0 auto;
 form :nth-child(5) {
     margin-top: 3vw;
 }
+
+form a {
+    display: block;
+margin: 0 auto;
+text-align: center;
+margin-top: .9vw;
+}

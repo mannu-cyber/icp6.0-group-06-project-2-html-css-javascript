@@ -3,6 +3,10 @@ body{
     margin: 0;
     background-color: #fff;
 }
+.main{
+    overflow-x: hidden;
+}
+
 .main-title{
     text-align: center;
     font-size: 50px;
