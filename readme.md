@@ -52,3 +52,8 @@ All images on Pixel Palette Gallery are subject to licensing agreements. Review 
 ## Contact
 
 For any inquiries, support, or feedback, please don't hesitate to [contact us](mailto:editingdevelopment@gmail.com). We're here to enhance your creative endeavors with breathtaking high-resolution images. Thank you for choosing Pixel Palette Gallery!
+
+
+
+
+
