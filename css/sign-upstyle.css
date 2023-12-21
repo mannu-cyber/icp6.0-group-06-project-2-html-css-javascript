@@ -1,20 +1,24 @@
 @font-face {
     font-family: h;
     src: url(../fonts/Laila\ Regular.ttf);
- }
+}
 
- @font-face {
+@font-face {
     font-family: p;
     src: url(../fonts/Hind\ Guntur\ Regular.ttf);
- }
- 
- *{
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
- body {
-    padding: 150px 300px;
+}
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 7vw;
 }
 
 .formdesign {
@@ -25,7 +29,7 @@
     width: 90%;
     padding: 8px 30px;
     border: none;
-    margin:1vw auto;
+    margin: 1vw auto;
     border-radius: 5px;
     font-size: 1.3vw;
     display: block;
@@ -53,29 +57,32 @@
 
 .container {
     background-color: rgb(202, 223, 242);
-    padding: 1vW;
-    padding-top: 1vW;
+    padding: 1vw;
+    padding-top: 1vw;
     width: 400px;
-    margin: 4vw auto;
+margin: 0 auto;
     border-radius: 10px;
-    box-shadow: 0 5px 5px #999;
+    box-shadow: 0 0 15px #999;
     height: 500px;
 }
 
 .heading {
+    margin-bottom: 2vw;
     text-align: center;
     font-size: 30px;
     font-family: h;
 }
-.input-box{
-    height:50px;
-    width:900px;
+
+.input-box {
+    height: 50px;
+    width: 900px;
     font-size: 7px;
     border-radius: 1px;
     margin-left: 15px;
     margin-top: 5px;
 
 }
-form :nth-child(5){
+
+form :nth-child(5) {
     margin-top: 3vw;
 }
