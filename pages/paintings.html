@@ -327,12 +327,12 @@ h1{
 <div class="card">
     <div class="product-card">
         <img src="../images/3.jpg" class="product-img">
-        <h2 class="product-title">fairytale </h2>
+        <h2 class="product-title">Turtle </h2>
         <p class="product-prize">Prize:₹1000</p>
         <div class="quantity-container">
-            <img src="../images/minus (3).png" class="btn-quantity" onclick="decreasequantity(this)"/>
+            <img src="../images/minus (3).png" class="btn-quantity" onclick="decreasequantity()"/>
             <span class="product-quantity" id="quantity-text">1</span>
-            <img src="../images/add.png" class="btn-quantity" onclick="increasequantity(this)"/>
+            <img src="../images/add.png" class="btn-quantity" onclick="increasequantity()"/>
         </div>
         <button type="button" class="btn">Buy Now</button>
     </div>
@@ -347,6 +347,7 @@ h1{
         </div>
         <button type="button" class="btn">Buy Now</button>
     </div>
+       
     <div class="product-card">
         <img src="../images/parrote.jpg" class="product-img2">
         <h2 class="product-title">Parrote</h2>
@@ -487,30 +488,23 @@ h1{
     </div>
    
      </div>
-    <script>
+     <script>
         const quantityElement=document.getElementById("quantity-text")
-        function increasequantity(value){
-        let quantity=parseInt(value.innerText);
-            if(value>10){
-                quantityElement1.innerText=++quantity;
-            }else{
-                alert("you can't add more than 10 items")
-            }
+        let quantity=parseInt(quantityElement.innerText);
+        function increasequantity(){
+            if(quantity<10){
+            quantityElement.innerText=++quantity;
+           }else{
+            alert("you can't add more than 10 items")
         }
-        function decreasequantity(value){
-        let quantity=parseInt(value.innerText);
-            if(value<1){
-                quantityElement1.innerText=--quantity;
-            }else{
-                alert(" you can't add less than 1 items")
-        }
-        
     }
-    
-    hamburger = document.querySelector(".hamburger");
-    nav = document.querySelector("nav");
-    hamburger.onclick = function(){
-    nav.classList.toggle("active");
+function decreasequantity(){
+
+    if(quantity>1){
+        quantityElement.innerText=--quantity;
+    }else{
+        alert(" you can't add less than 1 items")
+}
 }
     </script>
 </body>
