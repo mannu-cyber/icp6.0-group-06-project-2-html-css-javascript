@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+    }
+    
+    
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main{
+      overflow: hidden;
+        position: relative;
+    }
+    
+    .page1{
+        width: 100vw;
+        min-height: 100vh;
+        position: relative;
+    }
+      
+    
+.img-container{
+    display: inline-block;
+    width: 330px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .page2{
+        width: 100vw;
+        height: 64vh;
+         position: relative;
+    }
