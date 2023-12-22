@@ -21,6 +21,11 @@ align-items: center;
 padding-top: 7vw;
 }
 
+.main{
+    overflow: hidden;
+    position: relative;
+}
+
 .formdesign {
     font-size: 7px;
 }
@@ -49,14 +54,16 @@ padding-top: 7vw;
     font-family: p;
     font-weight: 700;
     cursor: pointer;
-    background-color: black;
-    color: aliceblue;
+    background-color: #666666;
+    box-shadow: 0 0 12px gray;
+    border: none;
+    color: rgb(0, 0, 0);
     border-radius: 5px;
 }
 
 
 .container {
-    background-color: rgb(202, 223, 242);
+    background-color: #666666;
     padding: 1vw;
     padding-top: 1vw;
     width: 400px;
@@ -64,6 +71,7 @@ margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 0 15px #999;
     height: 500px;
+    margin-bottom: 5vw;
 }
 
 .heading {
@@ -87,7 +95,7 @@ form :nth-child(5) {
     margin-top: 3vw;
 }
 
-form a {
+form .des {
     display: block;
 margin: 0 auto;
 text-align: center;

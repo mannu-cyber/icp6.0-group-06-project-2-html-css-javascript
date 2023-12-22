@@ -27,6 +27,7 @@ body{
     justify-content: center;
 }
 .container{
+    border-radius: 10px;
     width: 360px;
     height: 560px;
     background: #000;
@@ -89,8 +90,10 @@ form textarea{
 form button{
     margin-top: 5px;
     border: none;
-    background: #00fff0;
-    color: #222;
+    background: #666666;
+    box-shadow: 0 0 12px gray;
+    border: none;
+    color: #000000;
     padding: 10px 0;
     width: 100%;
     font-size: 20px;

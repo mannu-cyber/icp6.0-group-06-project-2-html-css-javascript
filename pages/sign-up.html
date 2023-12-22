@@ -7,38 +7,159 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Sign-up</title>
-
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/sign-upstyle.css">
 
 </head>
+
 <body>
-    <div class="container">
-        <h4 class="heading">Sign-up</h4>
-        <form aciton="/myaction.php" name="myForm" onsubmit=" validateForm()" method="post">
-            <div class="formdesign" id="name">
-                 <input type="text" name="fname" placeholder="Enter Your Name" required class="input-box"><b><span class="formerror"> </span></b>
+
+    <div class="main">
+
+
+        <header>
+            <div class="header-left">
+                <div class="logo">
+                    <img src="../logo/dark theme.png" width="40px" alt="">
+                    
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="../pages/gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="../pages/contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="../pages/about.html">About</a>
+                        </li>
+                      
+                    </ul>
+                    
+                </nav>
             </div>
-
-            <div class="formdesign" id="email">
-             <input type="email" name="femail" required class="input-box"  placeholder="Enter Your Email" ><b><span class="formerror"> </span></b>
+            <div class="header-right">
+                <div class="login-signup">
+                    <a href=""><i class="ri-user-fill"></i></a> 
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
+        </header>
+    
 
-            <div class="formdesign" id="pass">
-            <input type="password" name="fpass" required class="input-box"  placeholder="Enter Your Password" ><b><span class="formerror"></span></b>
+
+
+        <div class="container">
+            <h4 class="heading">Sign-up</h4>
+            <form aciton="/myaction.php" name="myForm" onsubmit=" validateForm()" method="post">
+                <div class="formdesign" id="name">
+                    <input type="text" name="fname" placeholder="Enter Your Name" required class="input-box"><b><span
+                            class="formerror"> </span></b>
+                </div>
+
+                <div class="formdesign" id="email">
+                    <input type="email" name="femail" required class="input-box" placeholder="Enter Your Email"><b><span
+                            class="formerror"> </span></b>
+                </div>
+
+                <div class="formdesign" id="pass">
+                    <input type="password" name="fpass" required class="input-box"
+                        placeholder="Enter Your Password"><b><span class="formerror"></span></b>
+                </div>
+
+                <div class="formdesign" id="cpass">
+                    <input type="password" name="fcpass" required class="input-box"
+                        placeholder="Confirm Password"><b><span class="formerror"></span></b>
+                </div>
+
+                <input class="but" type="submit" value="Submit" onclick="click()">
+                <a style=" display: block;
+                margin: 0 auto;
+                text-align: center;
+                margin-top: .9vw;
+                text-decoration: none;" href="../pages/login.html">Already have An Account</a>
+
+            </form>
+        </div>
+
+
+
+        <div class="footer">
+            <div class="social-media sections">
+            <h3> Photos shared by talented creators.</h3>
+            <p>Download our App</p>
+            <div class="download">
+                <button type="button"> <img src="../logo/appstore.png" alt=""></button>
+                <button type="button"><img src="../logo/playstore.png" alt=""></button>
             </div>
-
-            <div class="formdesign" id="cpass">
-            <input type="password" name="fcpass" required class="input-box"  placeholder="Confirm Password" ><b><span class="formerror"></span></b>
+            
+            <div class="handle">
+             
+            <a href="www.facebook.com">   <i class="ri-facebook-line"></i></a>
+            <a href="www.instagram.com">    <i class="ri-instagram-line"></i>
+            </a>
+              <a href="www.youtube.com">  <i class="ri-youtube-line"></i></a>
+               <a href="www.twitter.com"> <i class="ri-twitter-line"></i></a>
+               <a href="www.pinterest.com"> <i class="ri-pinterest-line"></i></a>
+            
             </div>
+            
+            </div>
+            
+            
+            <div class="quick-links sections">
+            <h3>Quick links</h3>
+            
+            <a href="../index.html">Home</a>
+            <a href="../pages/gallery.html">Gallery</a>
+            <a href="../pages/contact.html">Contact</a>
+            <a href="../pages/about.html">About</a>
+            
+            </div>
+            
+            
+            <div class="stock-images sections">
+                <h3>Stock Images</h3>
+            <button type="button">Black and white photography</button>
+            
+                <button type="button">Happy birthday images</button>
+                <button type="button">Love wallpaper</button>
+                <button type="button">Samsung wallpaper</button>
+                <button type="button">4K wallpaper</button>
+                <button type="button">iPhone wallpaper</button>
+                <button type="button">Lock screen wallpaper</button>
+                <button type="button">Cool wallpapers</button>
+                <button type="button">Best HD wallpapers</button>
+                <button type="button">Happy new year images</button>
+                <button type="button">Free business videos</button>
+                <button type="button">Galaxy wallpaper</button>
+            
+            
+            </div>
+            
+    
+            
+        </div>
+        <h5 style="text-align: center;">Copyright 2023 @ Pixel Pallete Gallery</h5>
+    
 
-            <input class="but" type="submit" value="Submit" onclick="click()">
-<a href="../pages/login.html">Already have An Account</a>
-
-        </form>
     </div>
+
+    <script src="../js/navbar.js"></script>
     <script src="../js/sign-up.js"></script>
 
-</body>
 
+
+</body>
 
 </html>

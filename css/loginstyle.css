@@ -22,11 +22,19 @@ justify-content: center;
 align-items: center;
 }
 
+.main{
+    overflow-x: hidden;
+    position: relative;
+    height: auto;
+}
+
  .box{
+
     width:330px;
     height: 430px;
-    background-color:rgb(202, 223, 242);
+    background-color:#666666;
      margin: 4vw auto;
+     margin-top: 30vw;
     border-radius: 10px;
     box-shadow: 0 0 15px gray;
     padding: 1vw;
@@ -79,8 +87,10 @@ form button{
     font-weight: 700;
     cursor: pointer;
     margin: 0vw auto;
-    background-color: black;
-    color: aliceblue;
+    background-color: #666666;
+    box-shadow: 0 0 12px gray;
+    border: none;
+    color: rgb(0, 0, 0);
     border-radius:5px ;
 }
 
