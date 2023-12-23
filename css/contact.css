@@ -15,7 +15,7 @@ body{
 .main-contact-container{
     background-color: rgb(202, 223, 242);
     width: 70%;
-    height: 900px;
+  height: auto;
     border-radius: 2px;
     margin: 0 auto;
     margin-top: 4vw;
@@ -95,4 +95,45 @@ body{
 .info-para{
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width:600px) {
+
+body{
+    overflow-x: hidden;
+}
+
+.main-contact-container{
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.main-image{
+    width: 100vw;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-para{
+    width: 90vw;
+}
+    
+.form-margin{
+    width: 100vw;
+    height: auto;
+}
+
+.form-margin input{
+    display: block;
+    margin: 0 auto;
+    border: none;
+}    
+
+.form-margin .button-1{
+    display: block;
+    margin: 0 auto;
+}
+
 }
