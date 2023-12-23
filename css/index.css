@@ -312,7 +312,7 @@ width: 40px;
     margin: 0 auto;
 padding: 1vw 3vw;
 font-size: 1.4vw;
-font-family: h;
+font-family: h;z-index: 22;
 cursor: pointer;
 font-weight: 800;
 transition: linear .5s;
