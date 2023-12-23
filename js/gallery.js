@@ -59,3 +59,14 @@ function saved(value) {
         state = false;
     }
 }
+
+
+gsap.from(".heading ",{
+  opacity:0,
+  scale:0,
+  duration:2,
+  delay:.5,
+  stagger:1,
+  y:900,
+  // zIndex:9,
+})
