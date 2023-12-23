@@ -44,7 +44,8 @@ mainElement.addEventListener("mousemove", function (dets) {
     gsap.to(cursor, {
         x: dets.x,
         y: dets.y,
-       opacity:1
+       opacity:1,
+       scale:1,
     })
 
 })
