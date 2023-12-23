@@ -838,6 +838,10 @@ background-color: #9be0eec3;
         }
 
         
+.page1{
+    height: 35vh;
+}
+
  .page2{
     height: 100vh;
 }
@@ -848,6 +852,30 @@ background-color: #9be0eec3;
     gap: 2px;
   flex-wrap: wrap;
 }
+
+
+
+.page3{
+    width: 100vw;
+    /* background-color: red; */
+    padding: 16x;
+}
+
+.page3 h1{
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.page3 .container .card{
+    width: 100%;
+    /* background-color: red; */
+;
+}
+
+.page3 .card img{
+    width: 100%;
+}
+
 
 }
 

@@ -15,16 +15,16 @@ function swiper(){
         clickable: true,
       },
       breakpoints: {
-        600: {
-          slidesPerView: 2,
+        500: {
+          slidesPerView: 3,
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 4,
+          slidesPerView: 5,
           spaceBetween: 40,
         },
         1024: {
-          slidesPerView: 6,
+          slidesPerView: 7,
           spaceBetween: 50,
         },
       },
@@ -105,15 +105,15 @@ scale:0,
   duration:1,
   delay:.5,
   y:-200,
-  stagger:1,
+  stagger:.5,
   scrub:5,
 })
 
 gsap.from(".logo",{
-  x:-200,
+  x:1200,
   scale:0,
   opacity:0,
-  duration:.5,
+  duration:1,
 })
 
 gsap.from(".logo-name",{
@@ -121,7 +121,7 @@ gsap.from(".logo-name",{
   scale:0,
   opacity:0,
   duration:1,
-  delay:3,
+  delay:2,
 })
 
 gsap.from(".login-signup",{
