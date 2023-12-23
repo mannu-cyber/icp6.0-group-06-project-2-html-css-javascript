@@ -1,6 +1,5 @@
 
 
-
 function swiper(){
     var swiper = new Swiper(".page1 .mySwiper", {
       loop: true,
@@ -38,13 +37,14 @@ function swiper(){
 
 const mainElement = document.querySelector(".main")
 const cursor = document.querySelector('#cursor')
-cursor.style.color = ""
+
 
 
 mainElement.addEventListener("mousemove", function (dets) {
     gsap.to(cursor, {
         x: dets.x,
-        y: dets.y
+        y: dets.y,
+       
     })
 
 })
