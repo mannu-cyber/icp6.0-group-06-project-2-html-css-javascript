@@ -56,10 +56,10 @@ a {
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
-    z-index: 99999;
+    z-index: 9;
     background-color: #FA4738;
     mix-blend-mode: difference;
-
+opacity: 0;
 }
 
 
